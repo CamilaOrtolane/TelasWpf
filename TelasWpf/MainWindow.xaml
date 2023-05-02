@@ -102,13 +102,13 @@
                         </Style>
                     </Border.Resources>
                 </Border>                
-
-                <StackPanel Margin="15">
+ 
+                <StackPanel Margin="20, 10">
                     <TextBlock Text="Login" FontFamily="OpenSans" FontWeight="Black" FontSize="60" Foreground= "#80DED9" HorizontalAlignment="Center" />
 
                     <TextBlock Text="Usuário" FontFamily="OpenSans" FontWeight="Black" FontSize="30" Foreground= "#80DED9" Margin="10, 0"/>
 
-                    <TextBox Background="#80DED9" BorderBrush="{x:Null}" Height="60">
+                    <TextBox Background="#80DED9"  x:Name="txtUsuario" FontFamily="Poppins" FontWeight="Black" FontSize="20" Padding="15,15,15,15" Foreground="White" BorderBrush="{x:Null}" Height="60">
                         <TextBox.Resources>
                             <Style TargetType="{x:Type Border}">
                                 <Setter Property="CornerRadius" Value="30"/>
@@ -118,7 +118,7 @@
 
                     <TextBlock Text="Senha" FontFamily="OpenSans" FontWeight="Black" FontSize="30" Foreground= "#80DED9" Margin="10, 0"/>
 
-                    <TextBox Background="#80DED9" BorderBrush="{x:Null}" Height="60">
+                    <TextBox Background="#80DED9" x:Name="txtSenha" Height="60" FontFamily="Poppins" FontWeight="Black" FontSize="20" Foreground="White" Padding="15,15,15,15" BorderBrush="{x:Null}">
                         <TextBox.Resources>
                             <Style TargetType="{x:Type Border}">
                                 <Setter Property="CornerRadius" Value="30"/>
@@ -126,7 +126,7 @@
                         </TextBox.Resources>
                     </TextBox>
 
-                    <TextBlock Text="Esqueci minha senha" FontFamily="OpenSans" FontWeight="Black" FontSize="20" Foreground= "#80DED9" HorizontalAlignment="Center"/>
+                    <TextBlock Text="Esqueci minha senha" FontFamily="OpenSans" FontWeight="Black" FontSize="23" Foreground= "#80DED9" HorizontalAlignment="Center" Height="30"/>
 
                     <Button Content="Logar" FontFamily="OpenSans" FontWeight="Black" FontSize="20" Background= "#80DED9" Foreground="White" BorderBrush="{x:Null}" Margin="120, 15">
                         <Button.Resources>

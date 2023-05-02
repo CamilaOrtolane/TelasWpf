@@ -8,25 +8,40 @@
       d:DesignHeight="608" d:DesignWidth="1080"
       Title="CadastroCliente">
 
-    <Grid Background="#FF80DED9">
+    <Grid Background="#FFFF">
+        
 
-       
-        <StackPanel Margin="0,55,1000,0" Background="#FF00809C"/>
-        <StackPanel Margin="0,0,0,500" Background="White"/>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="100"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
 
-        <StackPanel Margin="120,190,40,30" Background="White"/>
+        <!--<Grid.ColumnDefinitions>
+            <ColumnDefinition Width="540"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>-->
+        
+        <Grid Grid.Row="0">
+            <StackPanel>
+                <TextBlock Text="Cadastro de cliente" FontFamily="OpenSans" FontWeight="Black" FontSize="60" Foreground= "#80DED9" Margin="50, 15">
+                    
+                </TextBlock>
+            </StackPanel>
+        </Grid>
+        <!--<Grid Grid.Column="1">
+            <TextBlock Text="e" FontFamily="OpenSans" FontWeight="Black" FontSize="60" Foreground= "#80DED9" Margin="0, 23">
 
-        <Image Source="C:\Users\corto\Downloads\WpfSisMib\Design sem nome (18).png" Margin="-11,-19,768,458"/>
-        <Image Source="C:\Users\corto\Downloads\WpfSisMib\Design sem nome (23).png" Margin="900,16,-23,490"/>
-        <Image Source= "C:\Users\corto\Downloads\WpfSisMib\Design sem nome (21).png" Margin="756,28,154,500"/>
+            </TextBlock>
+        </Grid>-->
 
-        <Label FontFamily="OpenSans" FontSize="30" FontWeight="Black" Foreground="#80DED9" Content="user" Margin="884,44,120,521"/>
-
-        <TextBox HorizontalAlignment="Left" Margin="454,59,0,0" TextWrapping="Wrap" Text="Buscar" VerticalAlignment="Top" Width="350" BorderBrush="#FF00809C" Background="#FF00809C" Foreground="#FFAAD9E4" FontFamily="OpenSans" FontWeight="Black" FontSize="20" Height="27" TextAlignment="Right"/>
-
-        <Image Source="C:\Users\corto\Downloads\WpfSisMib\Design sem nome (24).png" Margin="-5,117,997,445"/>
-
-        <Label FontFamily="OpenSans" FontSize="43" FontWeight="Black" Foreground="#80DED9" Content="Cadastro do cliente" Margin="173,190,347,352"/>
-
+        <Grid Grid.Row="1">
+            <TextBox FontFamily="">
+                <TextBox.Resources>
+                    <Style TargetType="{x:Type Border}">
+                        <Setter Property="CornerRadius" Value="30"/>
+                    </Style>
+                </TextBox.Resources>
+            </TextBox>
+        </Grid>
     </Grid>
 </Page>
