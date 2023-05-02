@@ -10,6 +10,10 @@
         <Color x:Key="SolidColorBrushColor1">#FF80DED9</Color>
     </Window.Resources>
     <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="443*"/>
+            <ColumnDefinition Width="97*"/>
+        </Grid.ColumnDefinitions>
         <Grid.Background>
             <SolidColorBrush Color="{DynamicResource SolidColorBrushColor1}"/>
         </Grid.Background>
@@ -19,10 +23,53 @@
             <RowDefinition Height="150" />
         </Grid.RowDefinitions>
 
-        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="1"/>
-        <TextBlock Text="Bem" FontFamily="OpenSans" FontWeight="Black" FontSize="75" Foreground="White" Margin="99,142,607,230" Grid.RowSpan="2"/>
-        <TextBlock Text="Vindo!" FontFamily="OpenSans" FontWeight="Black" FontSize="75" Foreground="White" Margin="99,60,607,162" Grid.Row="1"/>
-        <TextBlock Text="Faça já o seu" FontFamily="OpenSans" FontWeight="Black" FontSize="40" Foreground="White" Grid.Row="1" Margin="99,140,687,100" RenderTransformOrigin="0.5,0.5">
+        <Image Source="C:\Users\corto\OneDrive\Documentos\PDS\TelasWpf\WhatsApp_Image_2023-05-01_at_23.53.17-removebg-preview.png" Margin="-385,-181,376,120" Grid.RowSpan="3" RenderTransformOrigin="0.5,0.5">
+            <Image.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-0.093"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Image.RenderTransform>
+        </Image>
+        <Image Source="C:\Users\corto\OneDrive\Documentos\PDS\TelasWpf\WhatsApp_Image_2023-05-01_at_23.53.17-removebg-preview.png" Margin="499,43,-403,-97" Grid.RowSpan="3" RenderTransformOrigin="0.5,0.5" Grid.ColumnSpan="2">
+            <Image.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-103.953"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Image.RenderTransform>
+        </Image>
+
+        <Image Source="C:\Users\corto\OneDrive\Documentos\PDS\TelasWpf\Design sem nome (19).png" Margin="422,-320,-406,98" Grid.RowSpan="2" RenderTransformOrigin="0.5,0.5" Grid.ColumnSpan="2">
+            <Image.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="130.639"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Image.RenderTransform>
+        </Image>
+
+        <Image Source="C:\Users\corto\OneDrive\Documentos\PDS\TelasWpf\Design sem nome (19).png" Margin="-201,62,36,-545" Grid.RowSpan="3" RenderTransformOrigin="0.5,0.5" Grid.ColumnSpan="2">
+            <Image.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-77.99"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Image.RenderTransform>
+        </Image>
+
+        <StackPanel HorizontalAlignment="Left" VerticalAlignment="Center" Grid.Row="1" Margin="540,0,0,0"/>
+        <TextBlock Text="Bem" FontFamily="OpenSans" FontWeight="Black" FontSize="75" Foreground="White" Margin="115,142,413,230" Grid.RowSpan="2"/>
+        <TextBlock Text="Vindo!" FontFamily="OpenSans" FontWeight="Black" FontSize="75" Foreground="White" Margin="115,60,413,162" Grid.Row="1"/>
+        <TextBlock Text="Faça já o seu" FontFamily="OpenSans" FontWeight="Black" FontSize="40" Foreground="White" Grid.Row="1" Margin="115,140,493,100" RenderTransformOrigin="0.5,0.5">
             <TextBlock.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
@@ -32,11 +79,11 @@
                 </TransformGroup>
             </TextBlock.RenderTransform>
         </TextBlock>
-        <TextBlock Text="login e comece" FontFamily="OpenSans" FontWeight="Black" FontSize="40" Foreground="White" Grid.Row="1" Margin="99,187,687,60"/>
-        <TextBlock Text="a vender!" FontFamily="OpenSans" FontWeight="Black" FontSize="40" Foreground="White" Grid.Row="1" Margin="99,230,687,10"/>
-        <StackPanel />
+        <TextBlock Text="login e comece" FontFamily="OpenSans" FontWeight="Black" FontSize="40" Foreground="White" Grid.Row="1" Margin="115,187,493,60"/>
+        <TextBlock Text="a vender!" FontFamily="OpenSans" FontWeight="Black" FontSize="40" Foreground="White" Grid.Row="1" Margin="115,230,493,10"/>
+        <StackPanel Grid.ColumnSpan="2" />
 
-        <StackPanel  Margin="572,99,158,101" Grid.RowSpan="3" >
+        <StackPanel  Margin="572,99,158,101" Grid.RowSpan="3" Grid.ColumnSpan="2" >
             <Rectangle Height="400" Stroke="White" Width="353" Fill="White"/>
         </StackPanel>
 
