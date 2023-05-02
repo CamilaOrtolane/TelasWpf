@@ -7,4 +7,16 @@
     <UseWPF>true</UseWPF>
   </PropertyGroup>
 
+  <ItemGroup>
+    <None Remove="images\Elemento_de_Fundo_azul.png" />
+    <None Remove="images\fundo.png" />
+    <None Remove="images\fundo_cinza.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="images\fundo.png" />
+    <Resource Include="images\fundo_cinza.png" />
+    <Resource Include="images\Elemento_de_Fundo_azul.png" />
+  </ItemGroup>
+
 </Project>
