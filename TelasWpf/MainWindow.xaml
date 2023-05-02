@@ -5,8 +5,42 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:TelasWpf"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="608" Width="1080">
+    <Window.Resources>
+        <Color x:Key="SolidColorBrushColor1">#FF80DED9</Color>
+    </Window.Resources>
     <Grid>
+        <Grid.Background>
+            <SolidColorBrush Color="{DynamicResource SolidColorBrushColor1}"/>
+        </Grid.Background>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="150"/>
+            <RowDefinition Height="300"/>
+            <RowDefinition Height="150" />
+        </Grid.RowDefinitions>
+
+        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="1"/>
+        <TextBlock Text="Bem" FontFamily="OpenSans" FontWeight="Black" FontSize="75" Foreground="White" Margin="99,142,607,230" Grid.RowSpan="2"/>
+        <TextBlock Text="Vindo!" FontFamily="OpenSans" FontWeight="Black" FontSize="75" Foreground="White" Margin="99,60,607,162" Grid.Row="1"/>
+        <TextBlock Text="Faça já o seu" FontFamily="OpenSans" FontWeight="Black" FontSize="40" Foreground="White" Grid.Row="1" Margin="99,140,687,100" RenderTransformOrigin="0.5,0.5">
+            <TextBlock.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-0.214"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </TextBlock.RenderTransform>
+        </TextBlock>
+        <TextBlock Text="login e comece" FontFamily="OpenSans" FontWeight="Black" FontSize="40" Foreground="White" Grid.Row="1" Margin="99,187,687,60"/>
+        <TextBlock Text="a vender!" FontFamily="OpenSans" FontWeight="Black" FontSize="40" Foreground="White" Grid.Row="1" Margin="99,230,687,10"/>
+        <StackPanel />
+
+        <StackPanel  Margin="572,99,158,101" Grid.RowSpan="3" >
+            <Rectangle Height="400" Stroke="White" Width="353" Fill="White"/>
+        </StackPanel>
+
+
 
     </Grid>
 </Window>
