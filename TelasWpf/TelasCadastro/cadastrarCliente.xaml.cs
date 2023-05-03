@@ -1,5 +1,4 @@
-﻿using TelasWpf.TelasCadastro;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -11,25 +10,18 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace TelasWpf
+namespace TelasWpf.TelasCadastro
 {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// Lógica interna para cadastrarCliente.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class cadastrarCliente : Window
     {
-        public MainWindow()
+        public cadastrarCliente()
         {
             InitializeComponent();
-        }
-        private void btEntrar_Click(object sender, RoutedEventArgs e)
-        {
-            var newWindow = new cadastrarCliente();
-            newWindow.Show();
-            Close();
         }
     }
 }

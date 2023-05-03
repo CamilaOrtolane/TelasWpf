@@ -128,7 +128,7 @@
 
                     <TextBlock Text="Esqueci minha senha" FontFamily="OpenSans" FontWeight="Black" FontSize="23" Foreground= "#80DED9" HorizontalAlignment="Center" Height="30"/>
 
-                    <Button Content="Logar" FontFamily="OpenSans" FontWeight="Black" FontSize="20" Background= "#80DED9" Foreground="White" BorderBrush="{x:Null}" Margin="120, 15">
+                    <Button Content="Logar" x:Name="btEntrar"  FontFamily="OpenSans" FontWeight="Black" FontSize="20" Background= "#80DED9" Foreground="White" BorderBrush="{x:Null}" Margin="120, 15">
                         <Button.Resources>
                             <Style TargetType="{x:Type Border}">
                                 <Setter Property="CornerRadius" Value="13"/>

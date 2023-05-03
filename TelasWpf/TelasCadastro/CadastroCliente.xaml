@@ -9,10 +9,16 @@
       Title="CadastroCliente">
 
     <Grid Background="#FFFF">
-        
+
 
         <Grid.RowDefinitions>
             <RowDefinition Height="100"/>
+            <RowDefinition Height="25"/>
+            <RowDefinition Height="100"/>
+            <RowDefinition Height="100"/>
+            <RowDefinition Height="100"/>
+            <RowDefinition Height="100"/>
+            
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
 
@@ -20,11 +26,11 @@
             <ColumnDefinition Width="540"/>
             <ColumnDefinition Width="*"/>
         </Grid.ColumnDefinitions>-->
-        
+
         <Grid Grid.Row="0">
             <StackPanel>
                 <TextBlock Text="Cadastro de cliente" FontFamily="OpenSans" FontWeight="Black" FontSize="60" Foreground= "#80DED9" Margin="50, 15">
-                    
+
                 </TextBlock>
             </StackPanel>
         </Grid>
@@ -34,11 +40,52 @@
             </TextBlock>
         </Grid>-->
 
-        <Grid Grid.Row="1">
-            <TextBox FontFamily="">
+        <Grid Grid.Row="2">
+            <TextBox Background="#7D808C"  Height = " 22 "  FontFamily = " Poppins "  FontWeight = "Bold"  FontSize = " 18 "  Padding = " 5,5,5,5 " Margin="10,24,628,54">
                 <TextBox.Resources>
                     <Style TargetType="{x:Type Border}">
-                        <Setter Property="CornerRadius" Value="30"/>
+                        <Setter Property="CornerRadius" Value="10"/>
+                    </Style>
+                </TextBox.Resources>
+            </TextBox>
+
+            <TextBox Background="#7D808C"  Height = " 22 "  FontFamily = " Poppins "  FontWeight = "Bold"  FontSize = " 18 "  Padding = " 5,5,5,5 " Margin="10,68,926,10">
+                <TextBox.Resources>
+                    <Style TargetType="{x:Type Border}">
+                        <Setter Property="CornerRadius" Value="10"/>
+                    </Style>
+                </TextBox.Resources>
+            </TextBox>
+            <TextBox Background="#7D808C"  Height = " 22 "  FontFamily = " Poppins "  FontWeight = "Bold"  FontSize = " 18 "  Padding = " 5,5,5,5 " Margin="188,68,628,10">
+                <TextBox.Resources>
+                    <Style TargetType="{x:Type Border}">
+                        <Setter Property="CornerRadius" Value="10"/>
+                    </Style>
+                </TextBox.Resources>
+            </TextBox>
+        </Grid>
+
+        <Grid Grid.Row="3">
+            <TextBox Background="#7D808C"  Height = " 22 "  FontFamily = " Poppins "  FontWeight = "Bold"  FontSize = " 18 "  Padding = " 5,5,5,5 " Margin="10,28,880,50">
+                <TextBox.Resources>
+                    <Style TargetType="{x:Type Border}">
+                        <Setter Property="CornerRadius" Value="10"/>
+                    </Style>
+                </TextBox.Resources>
+            </TextBox>
+            
+            <TextBox Background="#7D808C"  Height = " 22 "  FontFamily = " Poppins "  FontWeight = "Bold"  FontSize = " 18 "  Padding = " 5,5,5,5 " Margin="231,28,629,50">
+                <TextBox.Resources>
+                    <Style TargetType="{x:Type Border}">
+                        <Setter Property="CornerRadius" Value="10"/>
+                    </Style>
+                </TextBox.Resources>
+            </TextBox>
+
+            <TextBox Background="#7D808C"  Height = " 22 "  FontFamily = " Poppins "  FontWeight = "Bold"  FontSize = " 18 "  Padding = " 5,5,5,5 " Margin="10,68,628,10">
+                <TextBox.Resources>
+                    <Style TargetType="{x:Type Border}">
+                        <Setter Property="CornerRadius" Value="10"/>
                     </Style>
                 </TextBox.Resources>
             </TextBox>
