@@ -9,18 +9,18 @@
     <Grid Background="#FFFF">
 
 
-        <Grid.RowDefinitions>
-            <RowDefinition Height="90"/>
-            <RowDefinition Height="25"/>
-            <RowDefinition Height="60"/>
-            <RowDefinition Height="60"/>
-            <RowDefinition Height="60"/>
-            <RowDefinition Height="60"/>
-            <RowDefinition Height="60"/>
-            <RowDefinition Height="60"/>
-            <RowDefinition Height="60"/>
-            <RowDefinition Height="60"/>
+        <Grid Background="#FFFF">
 
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="75"/>
+            <RowDefinition Height="1"/>
+            <RowDefinition Height="60"/>
+            <RowDefinition Height="60"/>
+            <RowDefinition Height="60"/>
+            <RowDefinition Height="60"/>
+            <RowDefinition Height="60"/>
+            <RowDefinition Height="60"/>
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
 
@@ -30,7 +30,7 @@
             <ColumnDefinition Width="*"/>
         </Grid.ColumnDefinitions>
 
-        <Grid Grid.Row="1" Grid.Column="1">
+        <Grid Grid.Row="2" Grid.Column="0">
             <Border Background="#FFF">
                 <Border.Resources>
                     <Style TargetType="{x:Type Border}">
@@ -39,6 +39,13 @@
                 </Border.Resources>
             </Border>
         </Grid>
+
+        <Grid Grid.Row="0" Grid.Column="0">
+            <StackPanel>
+                <TextBlock FontFamily="OpenSans" Text="Cadastro de Cliente" FontSize="50" Foreground="#80DED9" FontWeight="Black" Margin="25, 10"></TextBlock>
+            </StackPanel>
+        </Grid>
+        
         <Grid Grid.Row="2" Grid.Column="0">
             <StackPanel Margin="20">
                 <TextBlock Foreground="#7D808C" Text="Nome" FontFamily="OpenSans" FontSize="20" FontWeight="Black" Margin="10,-25">
@@ -87,7 +94,7 @@
         <Grid Grid.Row="4">
             <StackPanel Margin="20,0">
 
-                <TextBlock Foreground="#7D808C" Text="Estado civil" FontFamily="OpenSans" FontSize="20" FontWeight="Black" RenderTransformOrigin="3,1"/>
+                <TextBlock Foreground="#7D808C" Text="Estado civil" FontFamily="OpenSans" FontSize="20" FontWeight="Black" RenderTransformOrigin="3,1" Width="200" HorizontalAlignment="Left" />
 
                 <TextBox Background="#7D808C" Height="20" Width="180" HorizontalAlignment="Left" >
                     <TextBox.Resources>
@@ -99,10 +106,10 @@
 
             </StackPanel>
 
-            <StackPanel Margin="30, 0">
-                <TextBlock Foreground="#7D808C" Text="Data de Nascimento" FontFamily="OpenSans" FontSize="20" FontWeight="Black" Height="24" Width="200" Margin="225, 0"/>
-
-                <TextBox Background="#7D808C" Height="21" Width="260" HorizontalAlignment="Right">
+            <StackPanel Margin="20, 0">
+                <TextBlock Foreground="#7D808C" Text="Data de Nascimento" FontFamily="OpenSans" FontSize="20" FontWeight="Black" Margin="240,0,0,0" />
+                
+                <TextBox Background="#7D808C" Height="21" Width="270" HorizontalAlignment="Right">
                     <TextBox.Resources>
                         <Style TargetType="{x:Type Border}">
                             <Setter Property="CornerRadius" Value="10"/>
@@ -111,6 +118,103 @@
                 </TextBox>
 
             </StackPanel>
+        </Grid>
+
+        <Grid Grid.Row="5" Grid.Column="0">
+            <StackPanel Margin="20, 0">
+                <TextBlock Foreground="#7D808C" Text="Cidade" FontFamily="OpenSans" FontSize="20" FontWeight="Black" RenderTransformOrigin="3,1" Width="200" HorizontalAlignment="Left" />
+
+                <TextBox Background="#7D808C" Height="20" Width="220" HorizontalAlignment="Left" >
+                    <TextBox.Resources>
+                        <Style TargetType="{x:Type Border}">
+                            <Setter Property="CornerRadius" Value="10"/>
+                        </Style>
+                    </TextBox.Resources>
+                </TextBox>
+            </StackPanel>
+
+            <StackPanel Margin="20,0" >
+                <TextBlock Foreground="#7D808C" Text="Estado" FontFamily="OpenSans" FontSize="20" FontWeight="Black" Margin="260,0,0,0" />
+
+                <TextBox Background="#7D808C" Height="21" Width="250" HorizontalAlignment="Right">
+                    <TextBox.Resources>
+                        <Style TargetType="{x:Type Border}">
+                            <Setter Property="CornerRadius" Value="10"/>
+                        </Style>
+                    </TextBox.Resources>
+                </TextBox>
+            </StackPanel>
+            
+        </Grid>
+
+        <Grid Grid.Row="6" Grid.Column="0">
+            <StackPanel Margin="20, 0">
+                <TextBlock Foreground="#7D808C" Text="Fone" FontFamily="OpenSans" FontSize="20" FontWeight="Black" RenderTransformOrigin="3,1" Width="200" HorizontalAlignment="Left" />
+
+                <TextBox Background="#7D808C" Height="20" Width="220" HorizontalAlignment="Left" >
+                    <TextBox.Resources>
+                        <Style TargetType="{x:Type Border}">
+                            <Setter Property="CornerRadius" Value="10"/>
+                        </Style>
+                    </TextBox.Resources>
+                </TextBox>
+            </StackPanel>
+
+            <StackPanel Margin="20,0" >
+                <TextBlock Foreground="#7D808C" FontFamily="OpenSans" FontSize="20" FontWeight="Black" Margin="260,0,0,0" Text="Profissão" ></TextBlock>
+
+                <TextBox Background="#7D808C" Height="21" Width="250" HorizontalAlignment="Right">
+                    <TextBox.Resources>
+                        <Style TargetType="{x:Type Border}">
+                            <Setter Property="CornerRadius" Value="10"/>
+                        </Style>
+                    </TextBox.Resources>
+                </TextBox>
+            </StackPanel>
+
+        </Grid>
+
+        <Grid Grid.Row="7" Grid.Column="0">
+            <StackPanel Margin="20,0">
+                <TextBlock Foreground="#7D808C" Text="Residência" FontFamily="OpenSans" FontSize="20" FontWeight="Black" RenderTransformOrigin="3,1" Width="200" HorizontalAlignment="Left" Margin="0,15"/>
+                
+            </StackPanel>
+            <StackPanel Margin="20,0">
+                <RadioButton Background="#7D808C" Height="21" Width="350" HorizontalAlignment="Right" Margin="5">
+                    <TextBlock Foreground="#7D808C" Text="Propria" FontFamily="OpenSans" FontSize="20" FontWeight="Black" Height="21" Width="330" HorizontalAlignment="Right" Margin="0,-2"></TextBlock>
+                </RadioButton>
+
+                <RadioButton Background="#7D808C" Height="21" Width="350" HorizontalAlignment="Right" Margin="5">
+                    <TextBlock Foreground="#7D808C" Text="Alugada" FontFamily="OpenSans" FontSize="20" FontWeight="Black" Height="21" Width="330" HorizontalAlignment="Right" Margin="0,-2"></TextBlock>
+                </RadioButton>
+                
+            </StackPanel>
+        </Grid>
+
+        <Grid Grid.Row="8" Grid.Column="0">
+            <StackPanel Margin="20, 0">
+                <TextBlock Foreground="#7D808C" Text="Filiação" FontFamily="OpenSans" FontSize="20" FontWeight="Black" RenderTransformOrigin="3,1"  Height="30" Width="220" HorizontalAlignment="Left" />
+                <TextBlock Foreground="#7D808C" Text="Nome do Pai" FontFamily="OpenSans" FontSize="20" FontWeight="Black" RenderTransformOrigin="3,1"  Height="30" Width="220" HorizontalAlignment="Left" />
+
+
+                <TextBox Background="#7D808C" Height="20" Width="500" HorizontalAlignment="Left" >
+                    <TextBox.Resources>
+                        <Style TargetType="{x:Type Border}">
+                            <Setter Property="CornerRadius" Value="10"/>
+                        </Style>
+                    </TextBox.Resources>
+                </TextBox>
+                <TextBlock Foreground="#7D808C" Text="Nome da Mãe" FontFamily="OpenSans" FontSize="20" FontWeight="Black" RenderTransformOrigin="3,1"  Height="30" Width="220" HorizontalAlignment="Left" />
+                <TextBox Background="#7D808C" Height="20" Width="500" HorizontalAlignment="Left" >
+                    <TextBox.Resources>
+                        <Style TargetType="{x:Type Border}">
+                            <Setter Property="CornerRadius" Value="10"/>
+                        </Style>
+                    </TextBox.Resources>
+                </TextBox>
+
+            </StackPanel>
+           
         </Grid>
 
             <!--<Grid.ColumnDefinitions>
