@@ -8,7 +8,7 @@
       d:DesignHeight="608" d:DesignWidth="1080"
       Title="MenuPrincipal">
 
-    <Grid Background="White">
+    <Grid Background="#0000">
         
     </Grid>
 </Page>
