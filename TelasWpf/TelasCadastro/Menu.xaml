@@ -7,6 +7,157 @@
         mc:Ignorable="d"
         Title="Menu" Height="450" Width="800">
     <Grid>
-        
+        <Grid.Background>
+            <ImageBrush ImageSource="\images\fundo_sismib.png"/>
+        </Grid.Background>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="70"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="150"/>
+            <ColumnDefinition Width="150"/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+
+        <Grid Grid.Column="0">
+            <StackPanel Background="White">
+                <Image Height="100" Width="150" Source="\images\logo.png" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,0,0,11"/>
+            </StackPanel>
+        </Grid>
+
+        <Grid Grid.Column="1">
+            <StackPanel Background="White"></StackPanel>
+        </Grid>
+
+        <Grid Grid.Column="2">
+            <StackPanel Background="White">
+                <Grid Height="69" Width="500" RenderTransformOrigin="0.5,0.5">
+                    <Image Height="69" Width="50" Source="\images\search.png" Margin="305,0,145,0"></Image>
+                    <TextBox Text="Buscar" Foreground="#80ded9" Background="#ff00809c" Height="20" Width="300" Margin="0,24,200,25"/>
+                    <TextBlock Foreground="#80ded9" Height="20" Width="50" FontFamily="Arial Black" Margin="360,24,110,25">User</TextBlock>
+                    <Image Height="69" Width="70" Source="\images\user.png" Margin="400,-1,30,1"></Image>
+                </Grid>
+            </StackPanel>
+        </Grid>
+
+        <Grid Grid.Row="1">
+            <StackPanel Background="#FF00809C">
+                <Grid Height="365" Width="150">
+
+                    <Button Height="30" Width="50" BorderBrush="{x:Null}" Margin="-1,10,101,325">
+                        <Button.Background>
+                            <ImageBrush ImageSource="/images/Menu.png"/>
+                        </Button.Background>
+                    </Button>
+
+                    <Button Height="30" Width="50" BorderBrush="{x:Null}" Margin="1,30,99,305">
+                        <Button.Background>
+                            <ImageBrush ImageSource="\images\servico.png"/>
+                        </Button.Background>
+                    </Button>
+                    <Button Height="30" Width="50" BorderBrush="{x:Null}" Margin="1,51,99,284">
+                        <Button.Background>
+                            <ImageBrush ImageSource="\images\compra.png"/>
+                        </Button.Background>
+                    </Button>
+                    <Button Height="30" Width="50" BorderBrush="{x:Null}" Margin="-1,72,101,263">
+                        <Button.Background>
+                            <ImageBrush ImageSource="\images\cliente.png"/>
+                        </Button.Background>
+                    </Button>
+                    <Button Height="30" Width="50" BorderBrush="{x:Null}" Margin="1,90,99,245">
+                        <Button.Background>
+                            <ImageBrush ImageSource="\images\funcionarios.png"/>
+                        </Button.Background>
+                    </Button>
+                    <Button Height="30" Width="50" BorderBrush="{x:Null}" Margin="1,112,99,223">
+                        <Button.Background>
+                            <ImageBrush ImageSource="\images\fornecedor.png"/>
+                        </Button.Background>
+                    </Button>
+                    <Button Height="30" Width="50" BorderBrush="{x:Null}" Margin="1,132,99,203">
+                        <Button.Background>
+                            <ImageBrush ImageSource="\images\movel.png"/>
+                        </Button.Background>
+                    </Button>
+                    <Button Height="30" Width="50" BorderBrush="{x:Null}" Margin="1,151,99,184">
+                        <Button.Background>
+                            <ImageBrush ImageSource="\images\pagamento.png"/>
+                        </Button.Background>
+                    </Button>
+                    <Button Height="30" Width="50" BorderBrush="{x:Null}" Margin="-1,168,101,167">
+                        <Button.Background>
+                            <ImageBrush ImageSource="\images\recebimento.png"/>
+                        </Button.Background>
+                    </Button>
+                    <Button Height="30" Width="50" BorderBrush="{x:Null}" Margin="-1,187,101,148">
+                        <Button.Background>
+                            <ImageBrush ImageSource="\images\venda.png"/>
+                        </Button.Background>
+                    </Button>
+                    <Button Height="30" Width="50" BorderBrush="{x:Null}" Margin="1,208,99,127">
+                        <Button.Background>
+                            <ImageBrush ImageSource="\images\relatorio.png"/>
+                        </Button.Background>
+                    </Button>
+                    <Button Height="30" Width="50" BorderBrush="{x:Null}" Margin="1,231,99,104">
+                        <Button.Background>
+                            <ImageBrush ImageSource="\images\busca.png"/>
+                        </Button.Background>
+                    </Button>
+                    <Button Height="30" Width="50" BorderBrush="{x:Null}" Margin="1,251,99,84">
+                        <Button.Background>
+                            <ImageBrush ImageSource="\images\consultavenda.png"/>
+                        </Button.Background>
+                    </Button>
+                    <Button Height="30" Width="50" BorderBrush="{x:Null}" Margin="1,271,99,64">
+                        <Button.Background>
+                            <ImageBrush ImageSource="\images\estoque.png"/>
+                        </Button.Background>
+                    </Button>
+                    <TextBlock Foreground="#ffffff" Height="20" Width="50" FontFamily="Arial Black" Margin="38,19,62,326" >Menu</TextBlock>
+                    <TextBlock Foreground="#ffffff" Height="20" Width="50" FontFamily="Arial Black" Margin="38,39,62,306" ><Run Text="Serviço"/></TextBlock>
+                    <TextBlock Foreground="#ffffff" Height="20" Width="50" FontFamily="Arial Black" Margin="38,61,62,284" ><Run Text="Compra"/></TextBlock>
+                    <TextBlock Foreground="#ffffff" Height="20" Width="50" FontFamily="Arial Black" Margin="38,81,62,264" ><Run Text="Cliente"/></TextBlock>
+                    <TextBlock Foreground="#ffffff" Height="20" FontFamily="Arial Black" Margin="38,99,27,246" ><Run Text="Funcionário"/></TextBlock>
+                    <TextBlock Foreground="#ffffff" Height="20" FontFamily="Arial Black" Margin="38,119,37,226" ><Run Text="Fornecedor"/></TextBlock>
+                    <TextBlock Foreground="#ffffff" Height="20" Width="50" FontFamily="Arial Black" Margin="38,139,62,206" ><Run Text="Moveis"/></TextBlock>
+                    <TextBlock Foreground="#ffffff" Height="20" FontFamily="Arial Black" Margin="38,157,36,188" ><Run Text="Pagamento"/></TextBlock>
+                    <TextBlock Foreground="#ffffff" FontFamily="Arial Black" Margin="38,178,24,165" ><Run Text="Recebimento"/></TextBlock>
+                    <TextBlock Foreground="#ffffff" Width="50" FontFamily="Arial Black" Margin="38,196,62,147" ><Run Text="Venda"/></TextBlock>
+                    <TextBlock Foreground="#ffffff" FontFamily="Arial Black" Margin="38,216,48,127" ><Run Text="Relatório"/></TextBlock>
+                    <TextBlock Foreground="#ffffff" FontFamily="Arial Black" Margin="38,239,49,104" ><Run Text="Consultar"/></TextBlock>
+                    <TextBlock Foreground="#ffffff" Width="50" FontFamily="Arial Black" Margin="43,257,57,86" ><Run Text="Venda"/></TextBlock>
+                    <TextBlock Foreground="#ffffff" FontFamily="Arial Black" Margin="43,278,47,65" ><Run Text="Estoque"/></TextBlock>
+                </Grid>
+            </StackPanel>
+        </Grid>
+
+        <Grid Grid.Row="1" Grid.Column="2" Margin="40,43,57,84">
+            <Button Margin="148,212,204,129"/>
+            <Border Background="#FF00809C" Margin="6,42,-6,-42">
+                <Border.Resources>
+                    <Style TargetType="{x:Type Border}">
+                        <Setter Property="CornerRadius" Value="15"/>
+                    </Style>
+                </Border.Resources>
+            </Border>
+            <Border Background="#FFF" Margin="-18,17,18,-17">
+                <Border.Resources>
+                    <Style TargetType="{x:Type Border}">
+                        <Setter Property="CornerRadius" Value="15"/>
+                    </Style>
+                </Border.Resources>
+                <Grid Height="230" Width="400">
+                    <Button Height="25" Width="170" Margin="0,150,0,0" Foreground="White" Background="#6CE5E8" FontFamily="Arial Black" BorderBrush="{x:Null}" >Reajustar Meta de Venda</Button>
+                    <Image Height="100" Width="300" Source="\images\loading.png" Margin="-51,62,151,68"></Image>
+                    <TextBlock Height="30" Width="350" Foreground="#6ce5e8"  HorizontalAlignment="Center" TextAlignment="Center" FontFamily="Arial Black" Margin="0,10,0,200" FontSize="20" > Vendas Nos Ultimos 30 dias</TextBlock>
+                    <TextBlock Height="30" Width="100" Foreground="#6ce5e8"  HorizontalAlignment="Left" TextAlignment="Center" FontFamily="Arial Black" Margin="163,97,0,103" FontSize="20" ><Run Text="535/1000"/></TextBlock>
+                </Grid>
+            </Border>
+        </Grid>
     </Grid>
 </Window>
