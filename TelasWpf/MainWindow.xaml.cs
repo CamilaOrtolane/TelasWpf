@@ -31,5 +31,12 @@ namespace TelasWpf
             newWindow.Show();
             Close();
         }
+
+        private void btEntrar_Click_1(object sender, RoutedEventArgs e)
+        {
+            var newWindow = new cadastrarCliente();
+            newWindow.Show();
+            Close();
+        }
     }
 }
