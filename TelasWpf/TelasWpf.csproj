@@ -13,6 +13,7 @@
     <None Remove="images\fundo_cinza.png" />
     <None Remove="images\fundo_sismib.png" />
     <None Remove="images\Loading.png" />
+    <None Remove="images\logo.png" />
     <None Remove="images\Search.png" />
   </ItemGroup>
 
@@ -22,6 +23,7 @@
     <Resource Include="images\fundo_cinza.png" />
     <Resource Include="images\Elemento_de_Fundo_azul.png" />
     <Resource Include="images\Loading.png" />
+    <Resource Include="images\logo.png" />
     <Resource Include="images\Search.png" />
   </ItemGroup>
 

@@ -10,15 +10,14 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
 using System.Windows.Shapes;
 
 namespace TelasWpf.TelasCadastro
 {
     /// <summary>
-    /// Interação lógica para MenuPrincipal.xam
+    /// Lógica interna para MenuPrincipal.xaml
     /// </summary>
-    public partial class MenuPrincipal : Page
+    public partial class MenuPrincipal : Window
     {
         public MenuPrincipal()
         {

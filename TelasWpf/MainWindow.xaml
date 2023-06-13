@@ -6,79 +6,39 @@
         xmlns:local="clr-namespace:TelasWpf"
         mc:Ignorable="d"
         Title="MainWindow" Height="608" Width="1080">
-    <Window.Resources>
-        <Color x:Key="SolidColorBrushColor1">#FF80DED9</Color>
-    </Window.Resources>
     <Grid>
-        
-        <Grid.Background>
-            <SolidColorBrush Color="{DynamicResource SolidColorBrushColor1}"/>
-        </Grid.Background>
-
-        <Image Source="\images\fundo.png" Margin="-40"></Image>
-        
-        <!--<Image Source="\images\Elemento_de_Fundo_azul.png" Margin="-672,-356,72,56" RenderTransformOrigin="0.5,0.5">
-            <Image.RenderTransform>
-                <TransformGroup>
-                    <ScaleTransform/>
-                    <SkewTransform/>
-                    <RotateTransform Angle="-0.093"/>
-                    <TranslateTransform/>
-                </TransformGroup>
-            </Image.RenderTransform>
-        </Image>
-
-     
-        <Image Source="\images\Elemento_de_Fundo_azul.png" Margin="499,43,-403,-97" RenderTransformOrigin="0.5,0.5">
-            <Image.RenderTransform>
-                <TransformGroup>
-                    <ScaleTransform/>
-                    <SkewTransform/>
-                    <RotateTransform Angle="-103.953"/>
-                    <TranslateTransform/>
-                </TransformGroup>
-            </Image.RenderTransform>
-        </Image>
-
-        <Image Source="\images\fundo_cinza.png" Margin="422,-320,-406,98" RenderTransformOrigin="0.5,0.5">
-            <Image.RenderTransform>
-                <TransformGroup>
-                    <ScaleTransform/>
-                    <SkewTransform/>
-                    <RotateTransform Angle="130.639"/>
-                    <TranslateTransform/>
-                </TransformGroup>
-            </Image.RenderTransform>
-        </Image>
-
-        <Image Source="images\fundo_cinza.png" Margin="-201,62,36,-545" RenderTransformOrigin="0.5,0.5">
-            <Image.RenderTransform>
-                <TransformGroup>
-                    <ScaleTransform/>
-                    <SkewTransform/>
-                    <RotateTransform Angle="-77.99"/>
-                    <TranslateTransform/>
-                </TransformGroup>
-            </Image.RenderTransform>
-        </Image>-->
 
         <Grid>
+            <Grid.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <LinearGradientBrush.RelativeTransform>
+                        <TransformGroup>
+                            <ScaleTransform CenterY="0.5" CenterX="0.5"/>
+                            <SkewTransform CenterX="0.5" CenterY="0.5"/>
+                            <RotateTransform Angle="-90" CenterX="0.5" CenterY="0.5"/>
+                            <TranslateTransform/>
+                        </TransformGroup>
+                    </LinearGradientBrush.RelativeTransform>
+                    <GradientStop Color="#FF004AAD" Offset="1"/>
+                    <GradientStop Color="#FF5DE0E6" Offset="0"/>
+                </LinearGradientBrush>
+            </Grid.Background>
             <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="1.5*"/>
+                <ColumnDefinition Width="1.7*"/>
                 <ColumnDefinition Width="*"/>
                 <ColumnDefinition Width="150"/>
             </Grid.ColumnDefinitions>
 
             <Grid.RowDefinitions>
-                <RowDefinition Height="100"/>
+                <RowDefinition Height="75"/>
                 <RowDefinition Height="*"/>
                 <RowDefinition Height="100" />
             </Grid.RowDefinitions>
 
             <StackPanel Grid.Row="1" Grid.Column="0" VerticalAlignment="Center" Margin="20">
-                <TextBlock Text="Bem" FontFamily="OpenSans" FontWeight="Black" FontSize="75" Foreground="White" Margin="30, 0"/>
-                <TextBlock Text="Vindo!" FontFamily="OpenSans" FontWeight="Black" FontSize="75" Foreground="White"  Margin="30, 0"/>
-                <TextBlock Text="Faça já o seu" FontFamily="OpenSans" FontWeight="Black" FontSize="40" Foreground="White" RenderTransformOrigin="0.5,0.5"  Margin="30, 0">
+                <TextBlock Text="Bem" FontFamily="OpenSans" FontWeight="Light" FontSize="75" Foreground="White" Margin="50, 0"/>
+                <TextBlock Text="Vindo!" FontFamily="OpenSans" FontWeight="Light" FontSize="75" Foreground="White"  Margin="50, 0"/>
+                <TextBlock Text="Faça já o seu" FontFamily="OpenSans" FontWeight="Light" FontSize="40" Foreground="White" RenderTransformOrigin="0.5,0.5"  Margin="50, 0">
                     <TextBlock.RenderTransform>
                         <TransformGroup>
                             <ScaleTransform/>
@@ -89,56 +49,67 @@
                     </TextBlock.RenderTransform>
                 </TextBlock>
 
-                <TextBlock Text="login e comece" FontFamily="OpenSans" FontWeight="Black" FontSize="40" Foreground="White"  Margin="30, 0"/>
-                <TextBlock Text="a vender!" FontFamily="OpenSans" FontWeight="Black" FontSize="40" Foreground="White"  Margin="30, 0"/>
+                <TextBlock Text="login e comece" FontFamily="OpenSans" FontWeight="Light" FontSize="40" Foreground="White"  Margin="50, 0"/>
+                <TextBlock Text="a vender!" FontFamily="OpenSans" FontWeight="Light" FontSize="40" Foreground="White"  Margin="50, 0"/>
 
             </StackPanel>
 
             <Grid Grid.Row="1" Grid.Column="1">
+                <Border Margin="10,15,-15,-15">
+                    <Border.Resources>
+                        <Style TargetType="{x:Type Border}">
+                            <Setter Property="CornerRadius" Value="25"/>
+                        </Style>
+                    </Border.Resources>
+                    <Border.Background>
+                        <SolidColorBrush Color="#FF8C8C8C" Opacity="0.69"/>
+                    </Border.Background>
+                </Border>
                 <Border Background="#FFF">
                     <Border.Resources>
                         <Style TargetType="{x:Type Border}">
-                            <Setter Property="CornerRadius" Value="15"/>
+                            <Setter Property="CornerRadius" Value="25"/>
                         </Style>
                     </Border.Resources>
-                </Border>                
- 
+                </Border>
+
+
                 <StackPanel Margin="20, 10">
-                    <TextBlock Text="Login" FontFamily="OpenSans" FontWeight="Black" FontSize="60" Foreground= "#80DED9" HorizontalAlignment="Center" />
+                    <TextBlock Text="Login" FontFamily="OpenSans" FontWeight="Light" FontSize="60" Foreground= "#000" HorizontalAlignment="Center" />
 
-                    <TextBlock Text="Usuário" FontFamily="OpenSans" FontWeight="Black" FontSize="30" Foreground= "#80DED9" Margin="10, 0"/>
+                    <TextBlock Text="Usuário" FontFamily="OpenSans" FontWeight="Light" FontSize="30" Foreground= "#000" Margin="10, 0"/>
 
-                    <TextBox Background="#80DED9"  x:Name="txtUsuario" FontFamily="Poppins" FontWeight="Black" FontSize="20" Padding="15,15,15,15" Foreground="White" BorderBrush="{x:Null}" Height="60">
+                    <TextBox Background="#8C8C8C"  x:Name="txtUsuario" FontFamily="Poppins" FontWeight="Black" FontSize="20" Padding="15,15,15,15" Foreground="White" BorderBrush="{x:Null}" Height="60">
                         <TextBox.Resources>
                             <Style TargetType="{x:Type Border}">
-                                <Setter Property="CornerRadius" Value="30"/>
+                                <Setter Property="CornerRadius" Value="15"/>
                             </Style>
                         </TextBox.Resources>
                     </TextBox>
 
-                    <TextBlock Text="Senha" FontFamily="OpenSans" FontWeight="Black" FontSize="30" Foreground= "#80DED9" Margin="10, 0"/>
+                    <TextBlock Text="Senha" FontFamily="OpenSans" FontWeight="Light" FontSize="30" Foreground= "#000" Margin="10, 0"/>
 
-                    <TextBox Background="#80DED9" x:Name="txtSenha" Height="60" FontFamily="Poppins" FontWeight="Black" FontSize="20" Foreground="White" Padding="15,15,15,15" BorderBrush="{x:Null}">
+                    <TextBox Background="#8C8C8C" x:Name="txtSenha" Height="60" FontFamily="Poppins" FontWeight="Black" FontSize="20" Foreground="White" Padding="15,15,15,15" BorderBrush="{x:Null}">
                         <TextBox.Resources>
                             <Style TargetType="{x:Type Border}">
-                                <Setter Property="CornerRadius" Value="30"/>
+                                <Setter Property="CornerRadius" Value="15"/>
                             </Style>
                         </TextBox.Resources>
                     </TextBox>
 
-                    <TextBlock Text="Esqueci minha senha" FontFamily="OpenSans" FontWeight="Black" FontSize="23" Foreground= "#80DED9" HorizontalAlignment="Center" Height="30"/>
+                    <TextBlock Text="Esqueci minha senha" FontFamily="OpenSans" FontWeight="Light" FontSize="23" Foreground= "#000" HorizontalAlignment="Center" Height="30"/>
 
-                    <Button Content="Logar" x:Name="btEntrar"  FontFamily="OpenSans" FontWeight="Black" FontSize="20" Background= "#80DED9" Foreground="White" BorderBrush="{x:Null}" Margin="120, 15" Click="btEntrar_Click_1">
+                    <Button Content="Logar" x:Name="btEntrar"  FontFamily="OpenSans" FontWeight="Light" FontSize="20" Background= "#000" Foreground="White" BorderBrush="{x:Null}" Margin="100, 20" Click="btEntrar_Click_1">
                         <Button.Resources>
                             <Style TargetType="{x:Type Border}">
-                                <Setter Property="CornerRadius" Value="13"/>
+                                <Setter Property="CornerRadius" Value="10"/>
                             </Style>
                         </Button.Resources>
                     </Button>
 
                 </StackPanel>
-                
-                
+
+
 
             </Grid>
         </Grid>
