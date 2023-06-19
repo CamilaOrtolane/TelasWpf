@@ -12,14 +12,14 @@
                 <RowDefinition Height="90"/>
                 <RowDefinition Height="*"/>
             </Grid.RowDefinitions>
-            
+
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="60"/>
                 <ColumnDefinition Width="*"/>
             </Grid.ColumnDefinitions>
-            
+
             <Grid Grid.Row="0" Grid.ColumnSpan="2" Background="#004aad">
-                
+
             </Grid>
 
             <Grid Grid.Column="0" Grid.RowSpan="2" Background="#004aad">
@@ -30,10 +30,33 @@
                 </StackPanel>
 
                 <StackPanel Margin="-10,80">
-                    <Button x:Name="servico" BorderBrush="Transparent" Background="Transparent">
+                    <Button x:Name="btnservico" BorderBrush="Transparent" Background="Transparent">
                         <Image Source="/images/servico.png"></Image>
                     </Button>
                 </StackPanel>
+
+                <StackPanel Margin="-12,130">
+                    <Button x:Name="btncompra" BorderBrush="Transparent" Background="Transparent">
+                        <Image Source="/images/compra.png"></Image>
+                    </Button>
+                    <Button >
+                        <Image Source="/images/funcionarios.png"/>
+                    </Button>
+
+                    <Button x:Name="btncliente" BorderBrush="Transparent" Background="Transparent">
+                        <Image Source="/images/cliente.png"/>
+                    </Button>
+                    
+                </StackPanel>
+
+                <StackPanel Margin="-10,180">
+                    <Button x:Name="btncliente" BorderBrush="Transparent" Background="Transparent"/>
+                </StackPanel>
+
+                <StackPanel Margin="-12,290">
+                    <Button x:Name="btnfuncionario" BorderBrush="Transparent" Background="Transparent"/>
+                </StackPanel>
+
             </Grid>
         </Grid>
     </Grid>
