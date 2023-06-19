@@ -22,39 +22,47 @@
 
             </Grid>
 
-            <Grid Grid.Column="0" Grid.RowSpan="2" Background="#004aad">
+            <Grid Grid.Column="0" Grid.RowSpan="3" Background="#004aad">
                 <StackPanel Margin="-10,20">
                     <Button x:Name="logoHome" BorderBrush="Transparent" Background="Transparent">
                         <Image Source="/images/menu.png"></Image>
                     </Button>
                 </StackPanel>
 
-                <StackPanel Margin="-10,80">
+                <StackPanel Margin="-5,80">
                     <Button x:Name="btnservico" BorderBrush="Transparent" Background="Transparent">
                         <Image Source="/images/servico.png"></Image>
                     </Button>
                 </StackPanel>
 
-                <StackPanel Margin="-12,130">
+                <StackPanel Margin="-10,130">
                     <Button x:Name="btncompra" BorderBrush="Transparent" Background="Transparent">
                         <Image Source="/images/compra.png"></Image>
                     </Button>
-                    <Button >
+                    <Button x:Name="btnfuncionario" BorderBrush="Transparent" Background="Transparent">
                         <Image Source="/images/funcionarios.png"/>
                     </Button>
 
                     <Button x:Name="btncliente" BorderBrush="Transparent" Background="Transparent">
                         <Image Source="/images/cliente.png"/>
                     </Button>
+
                     
                 </StackPanel>
-
-                <StackPanel Margin="-10,180">
+                
+                <!--<StackPanel Margin="-10,180">
                     <Button x:Name="btncliente" BorderBrush="Transparent" Background="Transparent"/>
                 </StackPanel>
 
                 <StackPanel Margin="-12,290">
                     <Button x:Name="btnfuncionario" BorderBrush="Transparent" Background="Transparent"/>
+                </StackPanel>-->
+
+                <StackPanel Margin="-10, 295">
+
+                    <Button x:Name="btnfornecedor" BorderBrush="Transparent" Background="Transparent">
+                        <Image Source="\images\fornecedor.png"></Image>
+                    </Button>
                 </StackPanel>
 
             </Grid>
