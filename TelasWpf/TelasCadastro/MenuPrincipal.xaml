@@ -7,65 +7,139 @@
         mc:Ignorable="d"
         Title="MenuPrincipal" Height="450" Width="800">
     <Grid>
-        <Grid>
+        <Grid Margin="0,0,0,-174">
             <Grid.RowDefinitions>
                 <RowDefinition Height="90"/>
                 <RowDefinition Height="*"/>
             </Grid.RowDefinitions>
 
             <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="60"/>
+                <ColumnDefinition Width="175"/>
                 <ColumnDefinition Width="*"/>
             </Grid.ColumnDefinitions>
 
-            <Grid Grid.Row="0" Grid.ColumnSpan="2" Background="#004aad">
+            <Grid Height="90" Background="#004aad">
 
             </Grid>
+            <Grid Grid.Column="1" VerticalAlignment="Top" Height="90" Background="#004aad">
 
-            <Grid Grid.Column="0" Grid.RowSpan="3" Background="#004aad">
-                <StackPanel Margin="-10,20">
-                    <Button x:Name="logoHome" BorderBrush="Transparent" Background="Transparent">
-                        <Image Source="/images/menu.png"></Image>
-                    </Button>
-                </StackPanel>
-
-                <StackPanel Margin="-5,80">
-                    <Button x:Name="btnservico" BorderBrush="Transparent" Background="Transparent">
-                        <Image Source="/images/servico.png"></Image>
-                    </Button>
-                </StackPanel>
-
-                <StackPanel Margin="-10,130">
-                    <Button x:Name="btncompra" BorderBrush="Transparent" Background="Transparent">
-                        <Image Source="/images/compra.png"></Image>
-                    </Button>
-                    <Button x:Name="btnfuncionario" BorderBrush="Transparent" Background="Transparent">
-                        <Image Source="/images/funcionarios.png"/>
-                    </Button>
-
-                    <Button x:Name="btncliente" BorderBrush="Transparent" Background="Transparent">
-                        <Image Source="/images/cliente.png"/>
-                    </Button>
-
-                    
+                <StackPanel>
+                    <Grid>
+                        <StackPanel Margin="450,20,56,424">
+                            <Image Source="\images\busca.png" Margin="0,0"></Image>
+                        </StackPanel>
+                        <StackPanel Margin="-10, 40,0,400">
+                            <TextBox Background="#8C8C8C" x:Name="txtUsuario" FontFamily="Poppins" FontWeight="Black" FontSize="20" Padding="15,15,15,15" Foreground="White" BorderBrush="{x:Null}" Height="25" Width="362">
+                                <TextBox.Resources>
+                                    <Style TargetType="{x:Type Border}">
+                                        <Setter Property="CornerRadius" Value="15"/>
+                                    </Style>
+                                </TextBox.Resources>
+                            </TextBox>
+                        </StackPanel>
+                        
+                        <Image Source="\images\user.png" Margin="513,-20,0,380"></Image>
+                    </Grid>
                 </StackPanel>
                 
-                <!--<StackPanel Margin="-10,180">
-                    <Button x:Name="btncliente" BorderBrush="Transparent" Background="Transparent"/>
-                </StackPanel>
-
-                <StackPanel Margin="-12,290">
-                    <Button x:Name="btnfuncionario" BorderBrush="Transparent" Background="Transparent"/>
-                </StackPanel>-->
-
-                <StackPanel Margin="-10, 295">
-
-                    <Button x:Name="btnfornecedor" BorderBrush="Transparent" Background="Transparent">
-                        <Image Source="\images\fornecedor.png"></Image>
-                    </Button>
-                </StackPanel>
-
             </Grid>
+            
+            <Grid Grid.Row="1" HorizontalAlignment="Left" Width="175" Background="#004aad">
+                <StackPanel Margin="0,0,0,0">
+                    
+
+                    <ListView BorderBrush="Transparent" Background="Transparent">
+
+                        <ListViewItem Height="40" Selected="ListViewItem_Selected">
+                            <StackPanel Orientation="Horizontal">
+                                <Image Margin="-10, 0, -10 , 5" Source="\images\servico.png"></Image>
+                                <Button x:Name="btnServico" Content="Serviço" FontFamily="OpenSans" FontWeight="Light" Foreground="White" FontSize="22" BorderBrush="Transparent" Background="Transparent" Click="btnMenu_Click">
+                                    
+                                </Button>
+                            </StackPanel>
+                        </ListViewItem>
+                        <ListViewItem Height="40" Selected="ListViewItem_Selected">
+                            <StackPanel Orientation="Horizontal">
+                                <Image Margin="-10, -5, -10 , 5" Source="\images\compra.png"></Image>
+                                <Button x:Name="btnCompra" Content="Compra" FontFamily="OpenSans" FontWeight="Light" Foreground="White" FontSize="22" BorderBrush="Transparent" Background="Transparent" Click="btnMenu_Click">
+
+                                </Button>
+                            </StackPanel>
+                        </ListViewItem>
+                        <ListViewItem Height="40" Selected="ListViewItem_Selected">
+                            <StackPanel Orientation="Horizontal">
+                                <Image Margin="-10, -5, -10 , 5" Source="\images\cliente.png"></Image>
+                                <Button x:Name="btnCliente" Content="Cliente" FontFamily="OpenSans" FontWeight="Light" Foreground="White" FontSize="22" BorderBrush="Transparent" Background="Transparent" Click="btnMenu_Click">
+
+                                </Button>
+                            </StackPanel>
+                        </ListViewItem>
+                        <ListViewItem Height="40" Selected="ListViewItem_Selected">
+                            <StackPanel Orientation="Horizontal">
+                                <Image Margin="-10, -5, -10 , 5" Source="\images\funcionarios.png"></Image>
+                                <Button x:Name="btnFuncionario" Content="Funcionário" FontFamily="OpenSans" FontWeight="Light" Foreground="White" FontSize="22" BorderBrush="Transparent" Background="Transparent" Click="btnMenu_Click"/>
+                            </StackPanel>
+                        </ListViewItem>
+                        <ListViewItem Height="40" Selected="ListViewItem_Selected">
+                            <StackPanel Orientation="Horizontal">
+                                <Image Margin="-10, -10, -15 , 5" Source="\images\fornecedor.png"></Image>
+                                <Button x:Name="btnFornecedor" Content="Fornecedor" FontFamily="OpenSans" FontWeight="Light" Foreground="White" FontSize="22" BorderBrush="Transparent" Background="Transparent" Click="btnMenu_Click"/>
+                            </StackPanel>
+                        </ListViewItem>
+                        <ListViewItem Height="40" Selected="ListViewItem_Selected">
+                            <StackPanel Orientation="Horizontal">
+                                <Image Margin="-10, -10, -15 , 5" Source="\images\movel.png"></Image>
+                                <Button x:Name="btnMovel" Content="Movel" FontFamily="OpenSans" FontWeight="Light" Foreground="White" FontSize="22" BorderBrush="Transparent" Background="Transparent" Click="btnMenu_Click"/>
+                            </StackPanel>
+                        </ListViewItem>
+                        <ListViewItem Height="40" Selected="ListViewItem_Selected">
+                            <StackPanel Orientation="Horizontal">
+                                <Image Margin="-10, -10, -15 , 5" Source="\images\pagamento.png"></Image>
+                                <Button x:Name="btnPagamento" Content="Pagar" FontFamily="OpenSans" FontWeight="Light" Foreground="White" FontSize="22" BorderBrush="Transparent" Background="Transparent" Click="btnMenu_Click"/>
+                            </StackPanel>
+                        </ListViewItem>
+                        <ListViewItem Height="40" Selected="ListViewItem_Selected">
+                            <StackPanel Orientation="Horizontal">
+                                <Image Margin="-10, -10, -15 , 5" Source="\images\recebimento.png"></Image>
+                                <Button x:Name="btnRecebimento" Content="Receber" FontFamily="OpenSans" FontWeight="Light" Foreground="White" FontSize="22" BorderBrush="Transparent" Background="Transparent" Click="btnMenu_Click"/>
+                            </StackPanel>
+                        </ListViewItem>
+                        <ListViewItem Height="40" Selected="ListViewItem_Selected">
+                            <StackPanel Orientation="Horizontal">
+                                <Image Margin="-10, -10, -15 , 5" Source="\images\venda.png"></Image>
+                                <Button x:Name="btnVenda" Content="Venda" FontFamily="OpenSans" FontWeight="Light" Foreground="White" FontSize="22" BorderBrush="Transparent" Background="Transparent" Click="btnMenu_Click"/>
+                            </StackPanel>
+                        </ListViewItem>
+                        <ListViewItem Height="40" Selected="ListViewItem_Selected">
+                            <StackPanel Orientation="Horizontal">
+                                <Image Margin="-10, -10, -15 , 5" Source="\images\relatorio.png"></Image>
+                                <Button x:Name="btnRelatório" Content="Relatório" FontFamily="OpenSans" FontWeight="Light" Foreground="White" FontSize="22" BorderBrush="Transparent" Background="Transparent" Click="btnMenu_Click"/>
+                            </StackPanel>
+                        </ListViewItem>
+                        <ListViewItem Height="40" Selected="ListViewItem_Selected">
+                            <StackPanel Orientation="Horizontal">
+                                <Image Margin="-10, -10, -15 , 5" Source="\images\busca.png"></Image>
+                                <Button x:Name="btConsulta" Content="Consultar" FontFamily="OpenSans" FontWeight="Light" Foreground="White" FontSize="22" BorderBrush="Transparent" Background="Transparent" Click="btnMenu_Click"/>
+                            </StackPanel>
+                        </ListViewItem>
+                        <ListViewItem Height="40" Selected="ListViewItem_Selected">
+                            <StackPanel Orientation="Horizontal">
+                                <Image Margin="-5, -10, -15 , 5" Source="\images\consultaVenda.png"></Image>
+                                <Button x:Name="btnConsuVenda" Content="Venda" FontFamily="OpenSans" FontWeight="Light" Foreground="White" FontSize="22" BorderBrush="Transparent" Background="Transparent" Click="btnMenu_Click"/>
+                            </StackPanel>
+                        </ListViewItem>
+                        <ListViewItem Height="40" Selected="ListViewItem_Selected">
+                            <StackPanel Orientation="Horizontal">
+                                <Image Margin="-5, -10, -15 , 5" Source="\images\estoque.png"></Image>
+                                <Button x:Name="btnConsuEstoque" Content="Estoque" FontFamily="OpenSans" FontWeight="Light" Foreground="White" FontSize="22" BorderBrush="Transparent" Background="Transparent" Click="btnMenu_Click"/>
+                            </StackPanel>
+                        </ListViewItem>
+                    </ListView>
+                </StackPanel>
+                
+                
+            </Grid>
+
         </Grid>
     </Grid>
 </Window>

@@ -15,24 +15,13 @@ using System.Windows.Shapes;
 namespace TelasWpf.TelasCadastro
 {
     /// <summary>
-    /// Lógica interna para MenuPrincipal.xaml
+    /// Lógica interna para cadastrarServico.xaml
     /// </summary>
-    public partial class MenuPrincipal : Window
+    public partial class cadastrarServico : Window
     {
-        public MenuPrincipal()
+        public cadastrarServico()
         {
             InitializeComponent();
-        }
-
-        private void ListViewItem_Selected(object sender, RoutedEventArgs e)
-        {
-
-        }
-
-        private void btnMenu_Click(object sender, RoutedEventArgs e)
-        {
-            var newWindow = new cadastrarServico();
-            newWindow.ShowDialog();
         }
     }
 }

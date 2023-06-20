@@ -8,10 +8,12 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="images\busca.png" />
     <None Remove="images\Cliente.png" />
     <None Remove="images\compra.png" />
     <None Remove="images\consultaVenda.png" />
     <None Remove="images\Elemento_de_Fundo_azul.png" />
+    <None Remove="images\estoque.png" />
     <None Remove="images\fornecedor.png" />
     <None Remove="images\funcionarios.png" />
     <None Remove="images\fundo.png" />
@@ -20,14 +22,21 @@
     <None Remove="images\Loading.png" />
     <None Remove="images\logo.png" />
     <None Remove="images\menu.png" />
+    <None Remove="images\movel.png" />
+    <None Remove="images\pagamento.png" />
+    <None Remove="images\recebimento.png" />
+    <None Remove="images\relatorio.png" />
     <None Remove="images\Search.png" />
     <None Remove="images\servico.png" />
+    <None Remove="images\venda.png" />
   </ItemGroup>
 
   <ItemGroup>
+    <Resource Include="images\busca.png" />
     <Resource Include="images\Cliente.png" />
     <Resource Include="images\compra.png" />
     <Resource Include="images\consultaVenda.png" />
+    <Resource Include="images\estoque.png" />
     <Resource Include="images\fornecedor.png" />
     <Resource Include="images\funcionarios.png" />
     <Resource Include="images\fundo_sismib.png" />
@@ -37,8 +46,13 @@
     <Resource Include="images\Loading.png" />
     <Resource Include="images\logo.png" />
     <Resource Include="images\menu.png" />
+    <Resource Include="images\movel.png" />
+    <Resource Include="images\pagamento.png" />
+    <Resource Include="images\recebimento.png" />
+    <Resource Include="images\relatorio.png" />
     <Resource Include="images\Search.png" />
     <Resource Include="images\servico.png" />
+    <Resource Include="images\venda.png" />
   </ItemGroup>
 
 </Project>
