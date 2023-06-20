@@ -21,6 +21,7 @@
     <None Remove="images\fundo_sismib.png" />
     <None Remove="images\Loading.png" />
     <None Remove="images\logo.png" />
+    <None Remove="images\logoLetra.png" />
     <None Remove="images\menu.png" />
     <None Remove="images\movel.png" />
     <None Remove="images\pagamento.png" />
@@ -29,6 +30,7 @@
     <None Remove="images\Search.png" />
     <None Remove="images\servico.png" />
     <None Remove="images\venda.png" />
+    <None Remove="images\voltar.png" />
   </ItemGroup>
 
   <ItemGroup>
@@ -45,6 +47,7 @@
     <Resource Include="images\Elemento_de_Fundo_azul.png" />
     <Resource Include="images\Loading.png" />
     <Resource Include="images\logo.png" />
+    <Resource Include="images\logoLetra.png" />
     <Resource Include="images\menu.png" />
     <Resource Include="images\movel.png" />
     <Resource Include="images\pagamento.png" />
@@ -53,6 +56,7 @@
     <Resource Include="images\Search.png" />
     <Resource Include="images\servico.png" />
     <Resource Include="images\venda.png" />
+    <Resource Include="images\voltar.png" />
   </ItemGroup>
 
 </Project>

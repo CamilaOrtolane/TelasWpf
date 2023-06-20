@@ -7,6 +7,78 @@
         mc:Ignorable="d"
         Title="cadastrarServico" Height="450" Width="800">
     <Grid>
-        
+        <Grid.RowDefinitions>
+            <RowDefinition Height="60"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="175"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <Grid Grid.Row="0">
+            <StackPanel>
+                <Button Background="Transparent" BorderBrush="Transparent" Click="btnVoltar_Click">
+                    <Image Source="\images\voltar.png" Width="100"/>
+                </Button>
+            </StackPanel>
+        </Grid>
+        <Grid Grid.Row="1">
+            <Border Margin="88,10,-570,30" >
+                <Border.Resources>
+                    <Style TargetType="{x:Type Border}">
+                        <Setter Property="CornerRadius" Value="15"/>
+                    </Style>
+                </Border.Resources>
+                <Border.Background>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <LinearGradientBrush.RelativeTransform>
+                            <TransformGroup>
+                                <ScaleTransform CenterY="0.5" CenterX="0.5"/>
+                                <SkewTransform CenterX="0.5" CenterY="0.5"/>
+                                <RotateTransform Angle="90" CenterX="0.5" CenterY="0.5"/>
+                                <TranslateTransform/>
+                            </TransformGroup>
+                        </LinearGradientBrush.RelativeTransform>
+                        <GradientStop Color="#FF004AAD"/>
+                        <GradientStop Color="#FF5DE0E6" Offset="1"/>
+                    </LinearGradientBrush>
+                </Border.Background>
+                <Button Content="Salvar" Background="White" BorderBrush="White" FontFamily="OpenSans" FontSize="20" Foreground="#000" Width="120" Height="40" Margin="503,217,27,0">
+                    <Button.Resources>
+                        <Style TargetType="{x:Type Border}">
+                            <Setter Property="CornerRadius" Value="10"/>
+                        </Style>
+                    </Button.Resources>
+                </Button>
+
+
+            </Border>
+
+            <StackPanel>
+                <TextBlock FontFamily="OpenSans" FontSize="20" FontWeight="Light"  Foreground="White" Margin="140,55,-200,-155">Tipo de Serviço:</TextBlock>
+                <TextBox Background="White" BorderBrush="White" FontFamily="OpenSans" FontSize="16" FontWeight="Light" Margin="90,83,-400,-80" Height="26" Width="408">
+                    <TextBox.Resources>
+                        <Style TargetType="{x:Type Border}">
+                            <Setter Property="CornerRadius" Value="10"/>
+                        </Style>
+                    </TextBox.Resources>
+                </TextBox>
+            </StackPanel>
+            <StackPanel>
+                <TextBlock FontFamily="OpenSans" FontSize="20" FontWeight="Light"  Foreground="White" Margin="140,120,-500,-280">Descrição</TextBlock>
+                <TextBox Background="White" BorderBrush="White" FontFamily="OpenSans" FontSize="16" FontWeight="Light" Margin="90,65,-400,-330" Height="100" Width="408">
+                    <TextBox.Resources>
+                        <Style TargetType="{x:Type Border}">
+                            <Setter Property="CornerRadius" Value="10"/>
+                        </Style>
+                    </TextBox.Resources>
+                </TextBox>
+            </StackPanel>
+
+            <StackPanel/>
+        </Grid>
+
     </Grid>
 </Window>

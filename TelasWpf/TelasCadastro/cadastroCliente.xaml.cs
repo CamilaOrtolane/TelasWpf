@@ -15,13 +15,19 @@ using System.Windows.Shapes;
 namespace TelasWpf.TelasCadastro
 {
     /// <summary>
-    /// Lógica interna para cadastrarCliente.xaml
+    /// Lógica interna para cadastroCliente.xaml
     /// </summary>
-    public partial class cadastrarCliente : Window
+    public partial class cadastroCliente : Window
     {
-        public cadastrarCliente()
+        public cadastroCliente()
         {
             InitializeComponent();
+        }
+        private void btnVoltar_Click(object sender, RoutedEventArgs e)
+        {
+            var newWindow = new MenuPrincipal();
+            newWindow.Show();
+            Close();
         }
     }
 }

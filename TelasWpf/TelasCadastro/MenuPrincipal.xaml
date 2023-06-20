@@ -25,28 +25,17 @@
 
                 <StackPanel>
                     <Grid>
-                        <StackPanel Margin="450,20,56,424">
-                            <Image Source="\images\busca.png" Margin="0,0"></Image>
+                        <StackPanel Margin="0,-50">
+                            <Image Source="\images\logoLetra.png" Height="180" Width="326"/>
                         </StackPanel>
-                        <StackPanel Margin="-10, 40,0,400">
-                            <TextBox Background="#8C8C8C" x:Name="txtUsuario" FontFamily="Poppins" FontWeight="Black" FontSize="20" Padding="15,15,15,15" Foreground="White" BorderBrush="{x:Null}" Height="25" Width="362">
-                                <TextBox.Resources>
-                                    <Style TargetType="{x:Type Border}">
-                                        <Setter Property="CornerRadius" Value="15"/>
-                                    </Style>
-                                </TextBox.Resources>
-                            </TextBox>
-                        </StackPanel>
-                        
-                        <Image Source="\images\user.png" Margin="513,-20,0,380"></Image>
                     </Grid>
                 </StackPanel>
-                
+
             </Grid>
-            
+
             <Grid Grid.Row="1" HorizontalAlignment="Left" Width="175" Background="#004aad">
                 <StackPanel Margin="0,0,0,0">
-                    
+
 
                     <ListView BorderBrush="Transparent" Background="Transparent">
 
@@ -54,7 +43,7 @@
                             <StackPanel Orientation="Horizontal">
                                 <Image Margin="-10, 0, -10 , 5" Source="\images\servico.png"></Image>
                                 <Button x:Name="btnServico" Content="Serviço" FontFamily="OpenSans" FontWeight="Light" Foreground="White" FontSize="22" BorderBrush="Transparent" Background="Transparent" Click="btnMenu_Click">
-                                    
+
                                 </Button>
                             </StackPanel>
                         </ListViewItem>
@@ -69,7 +58,7 @@
                         <ListViewItem Height="40" Selected="ListViewItem_Selected">
                             <StackPanel Orientation="Horizontal">
                                 <Image Margin="-10, -5, -10 , 5" Source="\images\cliente.png"></Image>
-                                <Button x:Name="btnCliente" Content="Cliente" FontFamily="OpenSans" FontWeight="Light" Foreground="White" FontSize="22" BorderBrush="Transparent" Background="Transparent" Click="btnMenu_Click">
+                                <Button x:Name="btnCliente" Content="Cliente" FontFamily="OpenSans" FontWeight="Light" Foreground="White" FontSize="22" BorderBrush="Transparent" Background="Transparent" Click="btnCliente_Click">
 
                                 </Button>
                             </StackPanel>
@@ -136,8 +125,33 @@
                         </ListViewItem>
                     </ListView>
                 </StackPanel>
-                
-                
+
+            </Grid>
+            <Grid >
+                <Border Width="500" Height="200" Margin="250,158,-575,-268" >
+                    <Border.Resources>
+                        <Style TargetType="{x:Type Border}">
+                            <Setter Property="CornerRadius" Value="15"/>
+                        </Style>
+                    </Border.Resources>
+                    <Border.Background>
+                        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                            <LinearGradientBrush.RelativeTransform>
+                                <TransformGroup>
+                                    <ScaleTransform CenterY="0.5" CenterX="0.5"/>
+                                    <SkewTransform CenterX="0.5" CenterY="0.5"/>
+                                    <RotateTransform Angle="90" CenterX="0.5" CenterY="0.5"/>
+                                    <TranslateTransform/>
+                                </TransformGroup>
+                            </LinearGradientBrush.RelativeTransform>
+                            <GradientStop Color="#FF004AAD"/>
+                            <GradientStop Color="#FF5DE0E6" Offset="1"/>
+                        </LinearGradientBrush>
+                    </Border.Background>
+                    <TextBlock Foreground="White" FontFamily="OpenSans" FontSize="30" FontWeight="Light" Margin="50,20">Venda nos ultimos os 30 dias</TextBlock>
+                    
+                </Border>
+                <TextBlock  FontFamily="OpenSans" FontSize="30" FontWeight="Light"  Foreground="White" Margin="435,258,-435,-258">000/000</TextBlock>
             </Grid>
 
         </Grid>

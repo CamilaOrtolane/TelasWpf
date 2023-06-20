@@ -32,7 +32,14 @@ namespace TelasWpf.TelasCadastro
         private void btnMenu_Click(object sender, RoutedEventArgs e)
         {
             var newWindow = new cadastrarServico();
-            newWindow.ShowDialog();
+            newWindow.Show();
+            Close();
+        }
+        private void btnCliente_Click(object sender, RoutedEventArgs e)
+        {
+            var newWindow = new cadastroCliente();
+            newWindow.Show();
+            Close();
         }
     }
 }
