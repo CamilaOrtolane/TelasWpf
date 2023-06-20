@@ -47,5 +47,19 @@ namespace TelasWpf.TelasCadastro
             newWindow.Show();
             Close();
         }
+        private void btnMovel_Click(object sender, RoutedEventArgs e)
+        {
+            var newWindow = new cadastrarMovel();
+            newWindow.Show();
+            Close();
+        }
+
+        private void btnFornecedor_Click(object sender, RoutedEventArgs e)
+        {
+            var newWindow = new cadastrarFornecedor();
+            newWindow.Show();
+            Close();
+        }
+
     }
 }

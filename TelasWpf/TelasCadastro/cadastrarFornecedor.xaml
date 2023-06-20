@@ -1,0 +1,124 @@
+﻿<Window x:Class="TelasWpf.TelasCadastro.cadastrarFornecedor"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TelasWpf.TelasCadastro"
+        mc:Ignorable="d"
+        Title="cadastrarFornecedor" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="60"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="175"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <Grid Grid.Row="0">
+            <StackPanel>
+                <Button Background="Transparent" BorderBrush="Transparent" Click="btnVoltar_Click">
+                    <Image Source="\images\voltar.png" Width="100"/>
+                </Button>
+            </StackPanel>
+        </Grid>
+        <Grid Grid.Row="1">
+            <Border Margin="139,-16,-610,10" >
+                <Border.Resources>
+                    <Style TargetType="{x:Type Border}">
+                        <Setter Property="CornerRadius" Value="15"/>
+                    </Style>
+                </Border.Resources>
+                <Border.Background>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <LinearGradientBrush.RelativeTransform>
+                            <TransformGroup>
+                                <ScaleTransform CenterY="0.5" CenterX="0.5"/>
+                                <SkewTransform CenterX="0.5" CenterY="0.5"/>
+                                <RotateTransform Angle="90" CenterX="0.5" CenterY="0.5"/>
+                                <TranslateTransform/>
+                            </TransformGroup>
+                        </LinearGradientBrush.RelativeTransform>
+                        <GradientStop Color="#FF004AAD"/>
+                        <GradientStop Color="#FF5DE0E6" Offset="1"/>
+                    </LinearGradientBrush>
+                </Border.Background>
+                <Button Content="Salvar" Background="White" BorderBrush="White" FontFamily="OpenSans" FontSize="20" Foreground="#000" Width="120" Height="40" Margin="503,300,17,0">
+                    <Button.Resources>
+                        <Style TargetType="{x:Type Border}">
+                            <Setter Property="CornerRadius" Value="10"/>
+                        </Style>
+                    </Button.Resources>
+                </Button>
+
+
+            </Border>
+
+            <StackPanel>
+                <TextBlock FontFamily="OpenSans" FontSize="20" FontWeight="Light"  Foreground="White" Margin="220,0,-200,-155">Nome:</TextBlock>
+                <TextBox x:Name="txtNomForn" Background="White" BorderBrush="White" FontFamily="OpenSans" FontSize="16" FontWeight="Light" Margin="50,5,-600,-80" Height="26" Width="408">
+                    <TextBox.Resources>
+                        <Style TargetType="{x:Type Border}">
+                            <Setter Property="CornerRadius" Value="10"/>
+                        </Style>
+                    </TextBox.Resources>
+                </TextBox>
+            </StackPanel>
+            <StackPanel>
+                <TextBlock FontFamily="OpenSans" FontSize="20" FontWeight="Light"  Foreground="White" Margin="220,60,-500,-280">Razão Social:</TextBlock>
+                <TextBox x:Name="txtRazaoSocial" Background="White" BorderBrush="White" FontFamily="OpenSans" FontSize="16" FontWeight="Light" Margin="50,-130,-600,-330" Height="26" Width="408">
+                    <TextBox.Resources>
+                        <Style TargetType="{x:Type Border}">
+                            <Setter Property="CornerRadius" Value="10"/>
+                        </Style>
+                    </TextBox.Resources>
+                </TextBox>
+            </StackPanel>
+            <StackPanel>
+                <TextBlock FontFamily="OpenSans" FontSize="20" FontWeight="Light"  Foreground="White" Margin="220,120,-400,-155">CNPJ:</TextBlock>
+                <TextBox x:Name="txtCnpjForn" Background="White" BorderBrush="White" FontFamily="OpenSans" FontSize="16" FontWeight="Light" Margin="50,145,-600,-80" Height="26" Width="408">
+                    <TextBox.Resources>
+                        <Style TargetType="{x:Type Border}">
+                            <Setter Property="CornerRadius" Value="10"/>
+                        </Style>
+                    </TextBox.Resources>
+                </TextBox>
+            </StackPanel>
+            <StackPanel>
+                <TextBlock FontFamily="OpenSans" FontSize="20" FontWeight="Light"  Foreground="White" Margin="220,170,-500,-280">Cidade:</TextBlock>
+                <TextBox x:Name="txCidadeForn" Background="White" BorderBrush="White" FontFamily="OpenSans" FontSize="16" FontWeight="Light" Margin="-160,90,-600,-330" Height="26" Width="200">
+                    <TextBox.Resources>
+                        <Style TargetType="{x:Type Border}">
+                            <Setter Property="CornerRadius" Value="10"/>
+                        </Style>
+                    </TextBox.Resources>
+                </TextBox>
+            </StackPanel>
+
+            <StackPanel>
+                <TextBlock FontFamily="OpenSans" FontSize="20" FontWeight="Light"  Foreground="White" Margin="450,170,-500,-280">Estado:</TextBlock>
+                <TextBox x:Name="txtEstadoForn" Background="White" BorderBrush="White" FontFamily="OpenSans" FontSize="16" FontWeight="Light" Margin="300,90,-600,-330" Height="26" Width="200">
+                    <TextBox.Resources>
+                        <Style TargetType="{x:Type Border}">
+                            <Setter Property="CornerRadius" Value="10"/>
+                        </Style>
+                    </TextBox.Resources>
+                </TextBox>
+            </StackPanel>
+
+            <StackPanel>
+                <TextBlock FontFamily="OpenSans" FontSize="20" FontWeight="Light"  Foreground="White" Margin="220,230,-400,-155">Endereço:</TextBlock>
+                <TextBox x:Name="txtEnderecoForn" Background="White" BorderBrush="White" FontFamily="OpenSans" FontSize="16" FontWeight="Light" Margin="70,160,-600,-80" Height="26" Width="427">
+                    <TextBox.Resources>
+                        <Style TargetType="{x:Type Border}">
+                            <Setter Property="CornerRadius" Value="10"/>
+                        </Style>
+                    </TextBox.Resources>
+                </TextBox>
+            </StackPanel>
+
+        </Grid>
+    </Grid>
+</Window>

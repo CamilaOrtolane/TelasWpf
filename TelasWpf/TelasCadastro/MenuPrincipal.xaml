@@ -72,13 +72,13 @@
                         <ListViewItem Height="40" Selected="ListViewItem_Selected">
                             <StackPanel Orientation="Horizontal">
                                 <Image Margin="-10, -10, -15 , 5" Source="\images\fornecedor.png"></Image>
-                                <Button x:Name="btnFornecedor" Content="Fornecedor" FontFamily="OpenSans" FontWeight="Light" Foreground="White" FontSize="22" BorderBrush="Transparent" Background="Transparent" />
+                                <Button x:Name="btnFornecedor" Content="Fornecedor" FontFamily="OpenSans" FontWeight="Light" Foreground="White" FontSize="22" BorderBrush="Transparent" Background="Transparent" Click="btnFornecedor_Click"/>
                             </StackPanel>
                         </ListViewItem>
                         <ListViewItem Height="40" Selected="ListViewItem_Selected">
                             <StackPanel Orientation="Horizontal">
                                 <Image Margin="-10, -10, -15 , 5" Source="\images\movel.png"></Image>
-                                <Button x:Name="btnMovel" Content="Movel" FontFamily="OpenSans" FontWeight="Light" Foreground="White" FontSize="22" BorderBrush="Transparent" Background="Transparent" Click="btnMenu_Click"/>
+                                <Button x:Name="btnMovel" Content="Movel" FontFamily="OpenSans" FontWeight="Light" Foreground="White" FontSize="22" BorderBrush="Transparent" Background="Transparent" Click="btnMovel_Click"/>
                             </StackPanel>
                         </ListViewItem>
                         <ListViewItem Height="40" Selected="ListViewItem_Selected">
