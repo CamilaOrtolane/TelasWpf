@@ -41,5 +41,11 @@ namespace TelasWpf.TelasCadastro
             newWindow.Show();
             Close();
         }
+        private void btnFuncionario_Click(object sender, RoutedEventArgs e)
+        {
+            var newWindow = new cadastrarFuncionario();
+            newWindow.Show();
+            Close();
+        }
     }
 }

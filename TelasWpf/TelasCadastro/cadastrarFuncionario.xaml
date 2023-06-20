@@ -1,11 +1,11 @@
-﻿<Window x:Class="TelasWpf.TelasCadastro.cadastroCliente"
+﻿<Window x:Class="TelasWpf.TelasCadastro.cadastrarFuncionario"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:TelasWpf.TelasCadastro"
         mc:Ignorable="d"
-        Title="cadastroCliente" Height="450" Width="800">
+        Title="cadastrarFuncionario" Height="450" Width="800">
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="60"/>
@@ -23,10 +23,10 @@
                     <Image Source="\images\voltar.png" Width="100"/>
                 </Button>
             </StackPanel>
-            
+
         </Grid>
         <Grid Grid.Row="1">
-            <Border Margin="32,20,-598,10" >
+            <Border Margin="32,10,-598,10" >
                 <Border.Resources>
                     <Style TargetType="{x:Type Border}">
                         <Setter Property="CornerRadius" Value="15"/>
@@ -56,8 +56,8 @@
 
             </Border>
             <StackPanel>
-                <TextBlock FontFamily="OpenSans" FontSize="20" FontWeight="Light"  Foreground="White" Margin="70,33,-200,-155">Nome:</TextBlock>
-                <TextBox x:Name="txtNome" Background="White" BorderBrush="White" FontFamily="OpenSans" FontSize="16" FontWeight="Light" Margin="-50,55,-400,-80" Height="20" Width="388">
+                <TextBlock FontFamily="OpenSans" FontSize="20" FontWeight="Light"  Foreground="White" Margin="70,15,-200,-155">Nome:</TextBlock>
+                <TextBox x:Name="txtNome" Background="White" BorderBrush="White" FontFamily="OpenSans" FontSize="16" FontWeight="Light" Margin="-55,30,-400,-80" Height="20" Width="388">
                     <TextBox.Resources>
                         <Style TargetType="{x:Type Border}">
                             <Setter Property="CornerRadius" Value="10"/>
@@ -66,8 +66,8 @@
                 </TextBox>
             </StackPanel>
             <StackPanel>
-                <TextBlock FontFamily="OpenSans" FontSize="20" FontWeight="Light"  Foreground="White" Margin="470,33,-600,-155">CPF:</TextBlock>
-                <TextBox x:Name="txtCpf"  Background="White" BorderBrush="White" FontFamily="OpenSans" FontSize="16" FontWeight="Light" Margin="400,55,-600,-80" Height="20" Width="240">
+                <TextBlock FontFamily="OpenSans" FontSize="20" FontWeight="Light"  Foreground="White" Margin="470,15,-600,-155">CPF:</TextBlock>
+                <TextBox x:Name="txtCpf"  Background="White" BorderBrush="White" FontFamily="OpenSans" FontSize="16" FontWeight="Light" Margin="400,30,-600,-80" Height="20" Width="240">
                     <TextBox.Resources>
                         <Style TargetType="{x:Type Border}">
                             <Setter Property="CornerRadius" Value="10"/>
@@ -76,29 +76,8 @@
                 </TextBox>
             </StackPanel>
             <StackPanel>
-                <TextBlock FontFamily="OpenSans" FontSize="20" FontWeight="Light"  Foreground="White" Margin="70,90,-200,-155">Data de Nascimento:</TextBlock>
-                <TextBox x:Name="txtDataNascCli"  Background="White" BorderBrush="White" FontFamily="OpenSans" FontSize="16" FontWeight="Light" Margin="-230,118,-400,-80" Height="20" Width="208">
-                    <TextBox.Resources>
-                        <Style TargetType="{x:Type Border}">
-                            <Setter Property="CornerRadius" Value="10"/>
-                        </Style>
-                    </TextBox.Resources>
-                </TextBox>
-            </StackPanel>
-
-            <StackPanel>
-                <TextBlock FontFamily="OpenSans" FontSize="20" FontWeight="Light"  Foreground="White" Margin="300,90,-600,-155">Estado Civil:</TextBlock>
-                <TextBox x:Name="txtCivil"  Background="White" BorderBrush="White" FontFamily="OpenSans" FontSize="16" FontWeight="Light" Margin="100,120,-600,-80" Height="20" Width="287">
-                    <TextBox.Resources>
-                        <Style TargetType="{x:Type Border}">
-                            <Setter Property="CornerRadius" Value="10"/>
-                        </Style>
-                    </TextBox.Resources>
-                </TextBox>
-            </StackPanel>
-            <StackPanel>
-                <TextBlock FontFamily="OpenSans" FontSize="20" FontWeight="Light"  Foreground="White" Margin="610,90,-600,-155">RG:</TextBlock>
-                <TextBox x:Name="txtRgCli"  Background="White" BorderBrush="White" FontFamily="OpenSans" FontSize="16" FontWeight="Light" Margin="580,120,-600,-80" Height="20" Width="147">
+                <TextBlock FontFamily="OpenSans" FontSize="20" FontWeight="Light"  Foreground="White" Margin="70,70,-200,-155">Data de Nascimento:</TextBlock>
+                <TextBox x:Name="txtDataNascCli"  Background="White" BorderBrush="White" FontFamily="OpenSans" FontSize="16" FontWeight="Light" Margin="-230,98,-400,-80" Height="20" Width="208">
                     <TextBox.Resources>
                         <Style TargetType="{x:Type Border}">
                             <Setter Property="CornerRadius" Value="10"/>
@@ -108,7 +87,28 @@
             </StackPanel>
 
             <StackPanel>
-                <TextBlock FontFamily="OpenSans" FontSize="20" FontWeight="Light"  Foreground="White" Margin="70,150,-200,-155">Nome do pai:</TextBlock>
+                <TextBlock FontFamily="OpenSans" FontSize="20" FontWeight="Light"  Foreground="White" Margin="300,70,-600,-155">Estado Civil:</TextBlock>
+                <TextBox x:Name="txtCivil"  Background="White" BorderBrush="White" FontFamily="OpenSans" FontSize="16" FontWeight="Light" Margin="100,100,-600,-80" Height="20" Width="287">
+                    <TextBox.Resources>
+                        <Style TargetType="{x:Type Border}">
+                            <Setter Property="CornerRadius" Value="10"/>
+                        </Style>
+                    </TextBox.Resources>
+                </TextBox>
+            </StackPanel>
+            <StackPanel>
+                <TextBlock FontFamily="OpenSans" FontSize="20" FontWeight="Light"  Foreground="White" Margin="610,70,-600,-155">RG:</TextBlock>
+                <TextBox x:Name="txtRgCli"  Background="White" BorderBrush="White" FontFamily="OpenSans" FontSize="16" FontWeight="Light" Margin="580,100,-600,-80" Height="20" Width="147">
+                    <TextBox.Resources>
+                        <Style TargetType="{x:Type Border}">
+                            <Setter Property="CornerRadius" Value="10"/>
+                        </Style>
+                    </TextBox.Resources>
+                </TextBox>
+            </StackPanel>
+
+            <StackPanel>
+                <TextBlock FontFamily="OpenSans" FontSize="20" FontWeight="Light"  Foreground="White" Margin="70,130,-200,-155">Nome do pai:</TextBlock>
                 <TextBox Background="White" BorderBrush="White" FontFamily="OpenSans" FontSize="16" FontWeight="Light" Margin="-80,158,-400,-80" Height="20" Width="363">
                     <TextBox.Resources>
                         <Style TargetType="{x:Type Border}">
@@ -118,7 +118,7 @@
                 </TextBox>
             </StackPanel>
             <StackPanel>
-                <TextBlock FontFamily="OpenSans" FontSize="20" FontWeight="Light"  Foreground="White" Margin="450,150,-600,-155">Nome da mãe:</TextBlock>
+                <TextBlock FontFamily="OpenSans" FontSize="20" FontWeight="Light"  Foreground="White" Margin="450,130,-600,-155">Nome da mãe:</TextBlock>
                 <TextBox Background="White" BorderBrush="White" FontFamily="OpenSans" FontSize="16" FontWeight="Light" Margin="420,158,-600,-80" Height="20" Width="304">
                     <TextBox.Resources>
                         <Style TargetType="{x:Type Border}">
@@ -128,7 +128,7 @@
                 </TextBox>
             </StackPanel>
             <StackPanel>
-                <TextBlock FontFamily="OpenSans" FontSize="20" FontWeight="Light"  Foreground="White" Margin="70,210,-200,-155">Cidade:</TextBlock>
+                <TextBlock FontFamily="OpenSans" FontSize="20" FontWeight="Light"  Foreground="White" Margin="70,190,-200,-155">Cidade:</TextBlock>
                 <TextBox Background="White" BorderBrush="White" FontFamily="OpenSans" FontSize="16" FontWeight="Light" Margin="-230,160,-400,-80" Height="20" Width="208">
                     <TextBox.Resources>
                         <Style TargetType="{x:Type Border}">
@@ -139,7 +139,7 @@
             </StackPanel>
 
             <StackPanel>
-                <TextBlock FontFamily="OpenSans" FontSize="20" FontWeight="Light"  Foreground="White" Margin="300,210,-600,-155">Estado:</TextBlock>
+                <TextBlock FontFamily="OpenSans" FontSize="20" FontWeight="Light"  Foreground="White" Margin="300,190,-600,-155">Estado:</TextBlock>
                 <TextBox Background="White" BorderBrush="White" FontFamily="OpenSans" FontSize="16" FontWeight="Light" Margin="100,160,-600,-80" Height="20" Width="287">
                     <TextBox.Resources>
                         <Style TargetType="{x:Type Border}">
@@ -149,7 +149,7 @@
                 </TextBox>
             </StackPanel>
             <StackPanel>
-                <TextBlock FontFamily="OpenSans" FontSize="20" FontWeight="Light"  Foreground="White" Margin="610,210,-600,-155">Telefone:</TextBlock>
+                <TextBlock FontFamily="OpenSans" FontSize="20" FontWeight="Light"  Foreground="White" Margin="610,190,-600,-155">Telefone:</TextBlock>
                 <TextBox Background="White" BorderBrush="White" FontFamily="OpenSans" FontSize="16" FontWeight="Light" Margin="580,160,-600,-80" Height="20" Width="147">
                     <TextBox.Resources>
                         <Style TargetType="{x:Type Border}">
@@ -159,7 +159,7 @@
                 </TextBox>
             </StackPanel>
             <StackPanel>
-                <TextBlock FontFamily="OpenSans" FontSize="20" FontWeight="Light"  Foreground="White" Margin="70,270,-600,-155">Profissão:</TextBlock>
+                <TextBlock FontFamily="OpenSans" FontSize="20" FontWeight="Light"  Foreground="White" Margin="70,250,-600,-155">Função:</TextBlock>
                 <TextBox Background="White" BorderBrush="White" FontFamily="OpenSans" FontSize="16" FontWeight="Light" Margin="-230,160,-400,-80" Height="20" Width="208">
                     <TextBox.Resources>
                         <Style TargetType="{x:Type Border}">
@@ -170,7 +170,29 @@
             </StackPanel>
 
             <StackPanel>
-                <TextBlock FontFamily="OpenSans" FontSize="20" FontWeight="Light"  Foreground="White" Margin="300,270,-600,-155">Residência:</TextBlock>
+                <TextBlock FontFamily="OpenSans" FontSize="20" FontWeight="Light"  Foreground="White" Margin="300,250,-600,-155">Carga Horária:</TextBlock>
+                <TextBox Background="White" BorderBrush="White" FontFamily="OpenSans" FontSize="16" FontWeight="Light" Margin="70,160,-600,-80" Height="20" Width="254">
+                    <TextBox.Resources>
+                        <Style TargetType="{x:Type Border}">
+                            <Setter Property="CornerRadius" Value="10"/>
+                        </Style>
+                    </TextBox.Resources>
+                </TextBox>
+            </StackPanel>
+
+            <StackPanel>
+                <TextBlock FontFamily="OpenSans" FontSize="20" FontWeight="Light"  Foreground="White" Margin="70,300,-600,-155">Setor:</TextBlock>
+                <TextBox Background="White" BorderBrush="White" FontFamily="OpenSans" FontSize="16" FontWeight="Light" Margin="-230,160,-400,-80" Height="20" Width="208">
+                    <TextBox.Resources>
+                        <Style TargetType="{x:Type Border}">
+                            <Setter Property="CornerRadius" Value="10"/>
+                        </Style>
+                    </TextBox.Resources>
+                </TextBox>
+            </StackPanel>
+
+            <StackPanel>
+                <TextBlock FontFamily="OpenSans" FontSize="20" FontWeight="Light"  Foreground="White" Margin="300,300,-600,-155">Salário:</TextBlock>
                 <TextBox Background="White" BorderBrush="White" FontFamily="OpenSans" FontSize="16" FontWeight="Light" Margin="70,160,-600,-80" Height="20" Width="254">
                     <TextBox.Resources>
                         <Style TargetType="{x:Type Border}">
