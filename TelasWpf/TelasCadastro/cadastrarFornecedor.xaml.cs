@@ -50,7 +50,7 @@ namespace TelasWpf.TelasCadastro
 
                 FornecedorDAO fornecedorDAO = new FornecedorDAO();
                 fornecedorDAO.Insert(forn);
-                MessageBox.Show("O funcionário foi adicionado com sucesso!", "Sucesso", MessageBoxButton.OK, MessageBoxImage.Information);
+                MessageBox.Show("O fornecedor foi adicionado com sucesso!", "Sucesso", MessageBoxButton.OK, MessageBoxImage.Information);
                 var result = MessageBox.Show("Deseja continuar?", "", MessageBoxButton.YesNo, MessageBoxImage.Question);
                 if (result == MessageBoxResult.No)
                 {

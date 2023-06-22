@@ -11,7 +11,6 @@ using TelasWpf.Database;
 namespace TelasWpf.Models
 {
     internal class FornecedorDAO : IDAO<Fornecedor>
-
     {
         private static Conexao conn;
         
