@@ -15,19 +15,18 @@ using System.Windows.Shapes;
 namespace TelasWpf.TelasCadastro
 {
     /// <summary>
-    /// Lógica interna para cadastrarFornecedor.xaml
+    /// Lógica interna para ListFornecedor.xaml
     /// </summary>
-    public partial class cadastrarFornecedor : Window
+    public partial class ListFornecedor : Window
     {
-        public cadastrarFornecedor()
+        public ListFornecedor()
         {
             InitializeComponent();
         }
-        private void btnVoltar_Click (object sender, RoutedEventArgs e)
+
+        private void DataGrid_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-            var newWindow = new MenuPrincipal();
-            newWindow.Show();
-            Close();
+
         }
     }
 }
