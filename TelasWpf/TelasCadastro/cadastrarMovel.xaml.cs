@@ -39,16 +39,16 @@ namespace TelasWpf.TelasCadastro
             try
             {
                 Movel movel = new Movel();
-                txtNomeMovel.Text = _movel.Nome;
-                txtMaterial.Text = _movel.Material;
-                txtDescriMovel.Text = _movel.Descricao;
-                txtPesoMovel.Text = _movel.Peso;
-                txtCompriMovel.Text = _movel.Comprimento;
-                txtCor.Text = _movel.Cor;
-                txtAltura.Text = _movel.Altura;
-                txtLargura.Text = _movel.Largura;
-                txtCustoMovel.Text = _movel.ValorCusto;
-                txtValorMovel.Text = _movel.ValorTotal;
+                txtNomeMovel.Text = movel.Nome;
+                txtMaterial.Text = movel.Material;
+                txtDescriMovel.Text = movel.Descricao;
+                txtPesoMovel.Text = movel.Peso;
+                txtCompriMovel.Text = movel.Comprimento;
+                txtCor.Text = movel.Cor;
+                txtAltura.Text = movel.Altura;
+                txtLargura.Text = movel.Largura;
+                txtCustoMovel.Text = movel.ValorCusto;
+                txtValorMovel.Text = movel.ValorTotal;
 
                 MovelDAO movelDAO = new MovelDAO();
                 movelDAO.Insert(movel);

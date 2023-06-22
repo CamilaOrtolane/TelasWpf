@@ -42,8 +42,8 @@ namespace TelasWpf.TelasCadastro
             try
             {
                 Servico servico = new Servico();
-                txtTipo.Text = _servico.Tipo;
-                txtDescricao.Text = _servico.Descricao;
+                txtTipo.Text = servico.Tipo;
+                txtDescricao.Text = servico.Descricao;
 
                 ServicoDAO servicoDAO = new ServicoDAO();
                 servicoDAO.Insert(servico);

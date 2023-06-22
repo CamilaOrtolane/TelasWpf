@@ -33,7 +33,7 @@ namespace TelasWpf.Models
             try
             {
                 var query = conn.Query();
-                query.CommandText = "INSERT INTO Funcionario (nome_fantasia_for, razao_social_for, cnpj_for, cidade_for, estado_fun) VALUES (@@nome_fantasia_for, @razao_social_for, @cnpj_for, @cidade_for, @estado_fun)";
+                query.CommandText = "INSERT INTO Fornecedor (nome_fantasia_for, razao_social_for, cnpj_for, cidade_for, estado_fun) VALUES (@nome_fantasia_for, @razao_social_for, @cnpj_for, @cidade_for, @estado_fun)";
                 query.Parameters.AddWithValue("@nome_fantasia_for", t.NomeFantasia);
                 query.Parameters.AddWithValue("@razao_social_for", t.RazaoSocial);
                 query.Parameters.AddWithValue("@cnpj_for", t.Cnpj);

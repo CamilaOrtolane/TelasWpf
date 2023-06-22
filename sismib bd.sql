@@ -157,13 +157,6 @@ id_des_fk int,
 foreign key (id_des_fk) references despesa(id_des)
 );
 
-insert into pagamento values(null, "agua", '2023-06-13', "conta de agua", 200, null);
-insert into pagamento values(null, "internet", '2023-06-12', "conta de internet", 200, null);
-insert into pagamento values(null, "energia", '2023-06-11', "conta de energia", 400, null);
-insert into pagamento values(null, "fornecedor", '2023-06-09', "conta de fornecedor", 2000, null);
-insert into pagamento values(null, "agua", '2023-06-08', "conta de agua", 200, null);
-select * from pagamento;
-
 
 
 create table reparo(
@@ -203,8 +196,8 @@ select * from entrega;
 
 create table servico(
 id_ser int primary key auto_increment,
-data_ser date,
 nome_ser varchar(20),
+descricao_ser varchar(1000),
 id_ent_fk int,
 foreign key (id_ent_fk) references entrega(id_ent),
 id_rep_fk int,

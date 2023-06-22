@@ -13,13 +13,13 @@ namespace TelasWpf.Database
 
         private static string host = "localhost";
 
-        private static string port = "3308";
+        private static string port = "3360";
 
         private static string user = "root";
 
         private static string password = "root";
 
-        private static string dbname = "Sismib";
+        private static string dbname = "sismib";
 
         private static MySqlConnection connection;
 

@@ -45,7 +45,7 @@
                         <GradientStop Color="#FF5DE0E6" Offset="1"/>
                     </LinearGradientBrush>
                 </Border.Background>
-                <Button Content="Salvar" Background="White" BorderBrush="White" FontFamily="OpenSans" FontSize="20" Foreground="#000" Width="120" Height="40" Margin="503,300,17,0">
+                <Button Content="Salvar" Background="White" BorderBrush="White" FontFamily="OpenSans" FontSize="20" Foreground="#000" Width="120" Height="40" Margin="503,300,17,0" Click="btnSalvar_Click">
                     <Button.Resources>
                         <Style TargetType="{x:Type Border}">
                             <Setter Property="CornerRadius" Value="10"/>

@@ -42,11 +42,11 @@ namespace TelasWpf.TelasCadastro
             try
             {
                 Fornecedor forn = new Fornecedor();
-                txtNomForn.Text = _fornecedor.NomeFantasia;
-                txtCnpjForn.Text = _fornecedor.Cnpj;
-                txtRazaoSocial.Text = _fornecedor.RazaoSocial;
-                txtEstadoForn.Text = _fornecedor.Estado;
-                txtCidadeForn.Text = _fornecedor.Cidade;
+                txtNomForn.Text = forn.NomeFantasia;
+                txtCnpjForn.Text = forn.Cnpj;
+                txtRazaoSocial.Text = forn.RazaoSocial;
+                txtEstadoForn.Text = forn.Estado;
+                txtCidadeForn.Text = forn.Cidade;
 
                 FornecedorDAO fornecedorDAO = new FornecedorDAO();
                 fornecedorDAO.Insert(forn);
