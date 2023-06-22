@@ -6,7 +6,20 @@ using System.Threading.Tasks;
 
 namespace TelasWpf.interfaces
 {
-    internal interface IDAO
+    /// <summary>
+    ///     Interface (contrato) para classes DAO
+    /// </summary>
+    /// <typeparam name="T"></typeparam>
+    internal interface IDAO<T>
     {
+        void Insert(T t);
+
+        void Update(T t);
+
+        void Delete(T t);
+
+        List<T> List();
+
+        T GetById(int id);
     }
 }
