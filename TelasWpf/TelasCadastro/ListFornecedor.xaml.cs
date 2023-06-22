@@ -28,5 +28,12 @@ namespace TelasWpf.TelasCadastro
         {
 
         }
+        private void btnVoltar_Click(object sender, RoutedEventArgs e)
+        {
+            var newWindow = new Window();
+            newWindow.Show();
+            Close();
+        }
+
     }
 }

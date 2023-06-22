@@ -29,36 +29,25 @@ namespace TelasWpf.Models
             throw new NotImplementedException();
         }
 
-        private void Insert(Fornecedor t)
-        {
-            throw new NotImplementedException();
-        }
-
-        public List<Fornecedor> List()
+        public void Insert(Fornecedor t)
         {
             try
             {
-                List<Fornecedor> list = new List<Fornecedor>();
-
                 var query = conn.Query();
-                query.CommandText = "SELECT * FROM fornecedor";
+                query.CommandText = "INSERT INTO Funcionario (nome_fantasia_for, razao_social_for, cnpj_for, cidade_for, estado_fun) VALUES (@@nome_fantasia_for, @razao_social_for, @cnpj_for, @cidade_for, @estado_fun)";
+                query.Parameters.AddWithValue("@nome_fantasia_for", t.NomeFantasia);
+                query.Parameters.AddWithValue("@razao_social_for", t.RazaoSocial);
+                query.Parameters.AddWithValue("@cnpj_for", t.Cnpj);
+                query.Parameters.AddWithValue("@cidade_for", t.Cidade);
+                query.Parameters.AddWithValue("@estado_fun", t.Estado);
+                
 
-                MySqlDataReader reader = query.ExecuteReader();
+                var result = query.ExecuteNonQuery();
 
-                while (reader.Read())
-                {
-                    list.Add(new Fornecedor()
-                    {
-                        Id = reader.GetInt32("cod_forn"),
-                        RazaoSocial = DAOhelpers.GetString(reader, "razao_social_for"),
-                        NomeFantasia = DAOhelpers.GetString(reader, "nome_fantasia_for"),
-                        Cnpj = DAOhelpers.GetString(reader, "cnpj_for"),
-                        Cidade = DAOhelpers.GetString(reader, "cidade_for"),
-                        Estado = DAOhelpers.GetString(reader, "estado_fun")
-                    });
-                }
+                if (result == 0)
+                    throw new Exception("O registo não foi inserido. Verifique e tente novamente");
 
-                return list;
+
             }
             catch (Exception e)
             {
@@ -68,10 +57,21 @@ namespace TelasWpf.Models
             {
                 conn.Close();
             }
+
+        }
+
+        public List<Fornecedor> List()
+        {
+           throw new NotSupportedException();
         }
 
 
         void IDAO<Fornecedor>.Update(Fornecedor t)
+        {
+            throw new NotImplementedException();
+        }
+
+        void IDAO<Fornecedor>.Insert(Fornecedor t)
         {
             throw new NotImplementedException();
         }

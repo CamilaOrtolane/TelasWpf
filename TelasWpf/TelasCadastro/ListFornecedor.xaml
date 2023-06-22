@@ -19,7 +19,7 @@
 
         <Grid Grid.Row="0">
             <StackPanel>
-                <Button Background="Transparent" BorderBrush="Transparent" Click="btnVoltar_Click">
+                <Button Background="Transparent" BorderBrush="Transparent" >
                     <Image Source="\images\voltar.png" Width="100"/>
                 </Button>
             </StackPanel>

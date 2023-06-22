@@ -37,7 +37,7 @@ namespace TelasWpf.TelasCadastro
             Close();
         }
 
-        private void btnSalvar_Click()
+        private void btnSalvar_Click(object sender, RoutedEventArgs e)
         {
             try
             {
@@ -50,6 +50,26 @@ namespace TelasWpf.TelasCadastro
 
                 FornecedorDAO fornecedorDAO = new FornecedorDAO();
                 fornecedorDAO.Insert(forn);
+                MessageBox.Show("O funcionário foi adicionado com sucesso!", "Sucesso", MessageBoxButton.OK, MessageBoxImage.Information);
+                var result = MessageBox.Show("Deseja continuar?", "", MessageBoxButton.YesNo, MessageBoxImage.Question);
+                if (result == MessageBoxResult.No)
+                {
+                    this.Close();
+                }
+                else
+                {
+                    txtNomForn.Text = "";
+                    txtCnpjForn.Text = "";
+                    txtRazaoSocial.Text = "";
+                    txtEstadoForn.Text = "";
+                    txtCidadeForn.Text = "";
+                }
+            }
+            catch (Exception ex)
+            {
+
+                MessageBox.Show(ex.Message, "Não Executado", MessageBoxButton.OK, MessageBoxImage.Error);
+
             }
         }
 
