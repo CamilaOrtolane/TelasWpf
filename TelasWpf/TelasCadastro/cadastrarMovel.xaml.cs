@@ -38,41 +38,41 @@ namespace TelasWpf.TelasCadastro
         {
             try
             {
-                 Movel movel = new Movel();
-                    movel.Nome = txtNomeMovel.Text;
-                    movel.Material = txtMaterial.Text;
-                    movel.Descricao = txtDescriMovel.Text;
-                    movel.Peso = txtPesoMovel.Text;
-                    movel.Comprimento = txtCompriMovel.Text;
-                    movel.Cor = txtCor.Text;
-                    movel.Altura = txtAltura.Text;
-                    movel.Largura = txtLargura.Text;
-                    movel.ValorCusto = txtCustoMovel.Text;
-                    movel.ValorTotal = txtValorMovel.Text;
+                Movel movel = new Movel();
+                movel.Nome = txtNomeMovel.Text;
+                movel.Material = txtMaterial.Text;
+                movel.Descricao = txtDescriMovel.Text;
+                movel.Peso = txtPesoMovel.Text;
+                movel.Comprimento = txtCompriMovel.Text;
+                movel.Cor = txtCor.Text;
+                movel.Altura = txtAltura.Text;
+                movel.Largura = txtLargura.Text;
+                movel.ValorCusto = txtCustoMovel.Text;
+                movel.ValorTotal = txtValorMovel.Text;
 
-                    MovelDAO movelDAO = new MovelDAO();
-                    movelDAO.Insert(movel);
-                    MessageBox.Show("O fornecedor foi adicionado com sucesso!", "Sucesso", MessageBoxButton.OK, MessageBoxImage.Information);
-                    var result = MessageBox.Show("Deseja continuar?", "", MessageBoxButton.YesNo, MessageBoxImage.Question);
-                    if (result == MessageBoxResult.No)
-                    {
-                        this.Close();
-                    }
-                    else
-                    {
-                        txtNomeMovel.Text = "";
-                        txtMaterial.Text = "";
-                        txtDescriMovel.Text = "";
-                        txtPesoMovel.Text = "";
-                        txtCompriMovel.Text = "";
-                        txtCor.Text = "";
-                        txtAltura.Text = "";
-                        txtLargura.Text = "";
-                        txtCustoMovel.Text = "";
-                        txtValorMovel.Text = "";
+                MovelDAO movelDAO = new MovelDAO();
+                movelDAO.Insert(movel);
+                MessageBox.Show("O fornecedor foi adicionado com sucesso!", "Sucesso", MessageBoxButton.OK, MessageBoxImage.Information);
+                var result = MessageBox.Show("Deseja continuar?", "", MessageBoxButton.YesNo, MessageBoxImage.Question);
+                if (result == MessageBoxResult.No)
+                {
+                    this.Close();
+                }
+                else
+                {
+                    txtNomeMovel.Text = "";
+                    txtMaterial.Text = "";
+                    txtDescriMovel.Text = "";
+                    txtPesoMovel.Text = "";
+                    txtCompriMovel.Text = "";
+                    txtCor.Text = "";
+                    txtAltura.Text = "";
+                    txtLargura.Text = "";
+                    txtCustoMovel.Text = "";
+                    txtValorMovel.Text = "";
 
-                    }
-              
+                }
+            }
             catch (Exception ex)
             {
 
@@ -80,12 +80,6 @@ namespace TelasWpf.TelasCadastro
 
             }
         }
-            catch (Exception ex)
-            {
-
-                MessageBox.Show(ex.Message, "Não Executado", MessageBoxButton.OK, MessageBoxImage.Error);
-
-            }
-        }
+           
     }
 }
