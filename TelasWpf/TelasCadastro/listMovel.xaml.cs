@@ -11,6 +11,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using TelasWpf.Models;
 
 namespace TelasWpf.TelasCadastro
 {
@@ -22,6 +23,26 @@ namespace TelasWpf.TelasCadastro
         public listMovel()
         {
             InitializeComponent();
+        }
+        private void CarregarDados()
+        {
+            try
+            {
+                var dao = new MovelDAO();
+
+                dgMovel.ItemsSource = dao.List();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        private void btnVoltar_Click(object sender, RoutedEventArgs e)
+        {
+            var newWindow = new MenuPrincipal();
+            newWindow.Show();
+            Close();
         }
     }
 }

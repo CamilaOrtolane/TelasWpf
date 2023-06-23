@@ -74,13 +74,8 @@ namespace TelasWpf.TelasCadastro
 
             }
         }
-            catch (Exception ex)
-            {
-
-                MessageBox.Show(ex.Message, "Não Executado", MessageBoxButton.OK, MessageBoxImage.Error);
-
-            }
-        }
+            
+        
 
         private void btnConsultar_Click(object sender, RoutedEventArgs e)
         {
