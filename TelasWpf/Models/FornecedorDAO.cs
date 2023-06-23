@@ -61,7 +61,38 @@ namespace TelasWpf.Models
 
         public List<Fornecedor> List()
         {
-           throw new NotSupportedException();
+            try
+            {
+                List<Fornecedor> list = new List<Fornecedor>();
+
+                var query = conn.Query();
+                query.CommandText = "SELECT * FROM fornecedor";
+
+                MySqlDataReader reader = query.ExecuteReader();
+
+                while (reader.Read())
+                {
+                    list.Add(new Fornecedor()
+                    {
+                        Id = reader.GetInt32("id_for"),
+                        RazaoSocial = DAOhelpers.GetString(reader, "nome_fantasia_for"),
+                        NomeFantasia = DAOhelpers.GetString(reader, "razao_social_for"),
+                        Cnpj = DAOhelpers.GetString(reader, "cnpj_for"),
+                        Cidade = DAOhelpers.GetString(reader, "cidade_for"),
+                        Estado = DAOhelpers.GetString(reader, "estado_fun")
+                    });
+                }
+
+                return list;
+            }
+            catch (Exception e)
+            {
+                throw e;
+            }
+            finally
+            {
+                conn.Close();
+            }
         }
 
 

@@ -73,5 +73,12 @@ namespace TelasWpf.TelasCadastro
             }
         }
 
+        private void btnConsultar_Click(object sender, RoutedEventArgs e)
+        {
+            var newWindow = new ListFornecedor();
+            newWindow.Show();
+            Close();
+        }
+
     }
 }

@@ -45,7 +45,7 @@
                         <GradientStop Color="#FF5DE0E6" Offset="1"/>
                     </LinearGradientBrush>
                 </Border.Background>
-                <Button Content="Salvar" Background="White" BorderBrush="White" FontFamily="OpenSans" FontSize="20" Foreground="#000" Width="120" Height="40" Margin="503,300,17,0" Click="btnSalvar_Click">
+                <Button Content="Salvar" Background="White" BorderBrush="White" FontFamily="OpenSans" FontSize="20" Foreground="#004aad" Width="120" Height="40" Margin="503,300,17,0" Click="btnSalvar_Click">
                     <Button.Resources>
                         <Style TargetType="{x:Type Border}">
                             <Setter Property="CornerRadius" Value="10"/>
@@ -55,6 +55,16 @@
 
 
             </Border>
+            <StackPanel >
+                <Button Content="Consultar" Background="White" BorderBrush="White" FontFamily="OpenSans" FontSize="20" Foreground="#004aad" Width="120" Height="40" Margin="15, 303, -950, 0" Click="btnConsultar_Click">
+                    <Button.Resources>
+                        <Style TargetType="{x:Type Border}">
+                            <Setter Property="CornerRadius" Value="10"/>
+                        </Style>
+                    </Button.Resources>
+                </Button>
+
+            </StackPanel>
 
             <StackPanel>
                 <TextBlock FontFamily="OpenSans" FontSize="20" FontWeight="Light"  Foreground="White" Margin="220,0,-200,-155">Nome:</TextBlock>

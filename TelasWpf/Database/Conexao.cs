@@ -13,7 +13,7 @@ namespace TelasWpf.Database
 
         private static string host = "localhost";
 
-        private static string port = "3360";
+        private static string port = "3307";
 
         private static string user = "root";
 

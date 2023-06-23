@@ -19,12 +19,12 @@
 
         <Grid Grid.Row="0">
             <StackPanel>
-                <Button Background="Transparent" BorderBrush="Transparent" >
+                <Button Background="Transparent" BorderBrush="Transparent" Click="btnVoltar_Click">
                     <Image Source="\images\voltar.png" Width="100"/>
                 </Button>
             </StackPanel>
         </Grid>
-        <DataGrid Grid.Column="1" Grid.Row="1" d:ItemsSource="{d:SampleData ItemCount=5}" SelectionChanged="DataGrid_SelectionChanged"/>
+        <DataGrid x:Name="dgFornecedor" Grid.Column="1" Grid.Row="1" d:ItemsSource="{d:SampleData ItemCount=5}" SelectionChanged="DataGrid_SelectionChanged"/>
 
 
     </Grid>
