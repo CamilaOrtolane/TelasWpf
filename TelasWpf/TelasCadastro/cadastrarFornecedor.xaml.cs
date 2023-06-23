@@ -39,17 +39,19 @@ namespace TelasWpf.TelasCadastro
 
         private void btnSalvar_Click(object sender, RoutedEventArgs e)
         {
+
             try
             {
                 Fornecedor forn = new Fornecedor();
-                txtNomForn.Text = forn.NomeFantasia;
-                txtCnpjForn.Text = forn.Cnpj;
-                txtRazaoSocial.Text = forn.RazaoSocial;
-                txtEstadoForn.Text = forn.Estado;
-                txtCidadeForn.Text = forn.Cidade;
+                forn.NomeFantasia = txtNomForn.Text;
+                forn.Cnpj = txtCnpjForn.Text;
+                forn.RazaoSocial = txtRazaoSocial.Text;
+                forn.Estado = txtEstadoForn.Text;
+                forn.Cidade = txtCidadeForn.Text;
 
                 FornecedorDAO fornecedorDAO = new FornecedorDAO();
                 fornecedorDAO.Insert(forn);
+
                 MessageBox.Show("O fornecedor foi adicionado com sucesso!", "Sucesso", MessageBoxButton.OK, MessageBoxImage.Information);
                 var result = MessageBox.Show("Deseja continuar?", "", MessageBoxButton.YesNo, MessageBoxImage.Question);
                 if (result == MessageBoxResult.No)
@@ -65,6 +67,13 @@ namespace TelasWpf.TelasCadastro
                     txtCidadeForn.Text = "";
                 }
             }
+            catch (Exception ex)
+            {
+
+                MessageBox.Show(ex.Message, "Não Executado", MessageBoxButton.OK, MessageBoxImage.Error);
+
+            }
+        }
             catch (Exception ex)
             {
 

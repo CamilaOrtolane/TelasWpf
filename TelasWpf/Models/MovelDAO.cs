@@ -64,7 +64,44 @@ namespace TelasWpf.Models
 
         public List<Movel> List()
         {
-            throw new NotSupportedException();
+            try
+            {
+                List<Movel> list = new List<Movel>();
+
+                var query = conn.Query();
+                query.CommandText = "SELECT * FROM Movel";
+
+                MySqlDataReader reader = query.ExecuteReader();
+
+                while (reader.Read())
+                {
+                    list.Add(new Movel()
+                    {
+                        Id = reader.GetInt32("id_mov"),
+                        Nome = DAOhelpers.GetString(reader, "nome_mov"),
+                        Material = DAOhelpers.GetString(reader, "materia_mov"),
+                        Descricao = DAOhelpers.GetString(reader, "descricao_mov"),
+                        Peso = DAOhelpers.GetString(reader, "peso_mov"),
+                        Comprimento = DAOhelpers.GetString(reader, "comprimento_mov"),
+                        Cor = DAOhelpers.GetString(reader, "cor_mov"),
+                        Altura = DAOhelpers.GetString(reader, "altura_mov"),
+                        Largura = DAOhelpers.GetString(reader, "largura_mov"),
+                        ValorCusto = DAOhelpers.GetString(reader, "valor_custo_mov"),
+                        ValorTotal = DAOhelpers.GetString(reader, "valor_venda_mov")
+
+                    });
+                }
+
+                return list;
+            }
+            catch (Exception e)
+            {
+                throw e;
+            }
+            finally
+            {
+                conn.Close();
+            }
         }
 
 
